@@ -35,7 +35,7 @@ export const team: TeamMember[] = [
   {
     name: "Team Member Name",
     role: "Externship Project Lead",
-    bio: "Assigns and reviews real-time projects, and runs milestone feedback sessions.",
+    bio: "Assigns and reviews projects for external organizations, and runs milestone feedback sessions.",
     initials: "ZS",
   },
   {
@@ -66,7 +66,7 @@ export const testimonials: Testimonial[] = [
     name: "Student Name",
     role: "Zortex Externship",
     quote:
-      "Working on a real project changed how I think about code reviews, deadlines and asking the right questions.",
+      "Working on an external organization project changed how I think about code reviews, deadlines and asking the right questions.",
     initials: "SN",
   },
   {

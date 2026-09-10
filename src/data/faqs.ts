@@ -7,7 +7,7 @@ export const generalFaqs: Faq[] = [
   {
     question: "What programs does Zortex offer?",
     answer:
-      "Zortex offers three programmes: Zortex Edge (offline training), Zortex Elite (online training) and Zortex Externship (real-time project experience with placement-oriented guidance).",
+      "Zortex offers three programmes: Zortex Edge (offline training), Zortex Elite (online training) and Zortex Externship (external organization project experience with placement-oriented guidance).",
   },
   {
     question: "What courses are available?",
@@ -27,12 +27,12 @@ export const generalFaqs: Faq[] = [
   {
     question: "What is the Externship program?",
     answer:
-      "In Zortex Externship you are assigned a real-time project and supported with mentorship and placement-oriented preparation aimed at helping you get placed in a real company.",
+      "In Zortex Externship you are deliver a project for an external organization and supported with mentorship and placement-oriented preparation aimed at helping you get placed in a professional organization.",
   },
   {
-    question: "Will I work on real-world projects?",
+    question: "Will I work on external organization projects?",
     answer:
-      "Yes. Every course includes practical builds, and the Externship programme is built entirely around real-time project work.",
+      "Yes. Every course includes practical builds, and the Externship programme is built entirely around external organization project work.",
   },
   {
     question: "How can I request a callback?",

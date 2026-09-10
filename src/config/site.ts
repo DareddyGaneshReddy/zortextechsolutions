@@ -8,7 +8,7 @@ export const siteConfig = {
   shortName: "Zortex",
   tagline: "Learn. Build. Experience. Get Career Ready.",
   description:
-    "Zortex Solutions provides practical technical training, real-time projects and externship opportunities that help students become career ready.",
+    "Zortex Solutions provides practical technical training, projects for external organizations and externship opportunities that help students become career ready.",
   url: "https://zortexsolutions.com",
 
   contact: {

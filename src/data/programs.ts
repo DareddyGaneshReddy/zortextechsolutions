@@ -185,7 +185,7 @@ export const programs: Program[] = [
     summary:
       "An externship where you deliver solutions for external organizations, gaining the practical experience and career-readiness skills employers actually value.",
     overview: [
-      "Zortex Externship is designed for students who have learned the fundamentals and now need real project exposure to become employable.",
+      "Zortex Externship is designed for students who have learned the fundamentals and now need direct experience with external organizations to become employable.",
       "Each student delivers a project for an external organization, working through it the way a professional team would — requirements, implementation, review and delivery — with mentors supporting the process.",
       "Alongside the project, students receive placement-oriented guidance covering resume, portfolio and interview preparation. Zortex supports the process; we do not promise guaranteed placement.",
     ],
@@ -199,7 +199,7 @@ export const programs: Program[] = [
       {
         title: "Placement-Oriented Guidance",
         description:
-          "Resume, portfolio, communication and interview preparation aimed at helping you get placed in a real company.",
+          "Resume, portfolio, communication and interview preparation aimed at helping you get placed in a professional organization.",
       },
     ],
     benefits: [
@@ -251,7 +251,7 @@ export const programs: Program[] = [
       },
     ],
     audience: [
-      "Students who know the basics but lack real project experience",
+      "Students who know the basics but lack experience with external organization projects",
       "Final-year students preparing for placements",
       "Graduates who need practical experience on their resume",
       "Learners who want to move from tutorials to real work",
@@ -271,7 +271,7 @@ export const programs: Program[] = [
       {
         question: "Is placement guaranteed?",
         answer:
-          "No. The programme is placement-oriented: we provide real project experience and structured preparation to improve your chances, but we do not make guaranteed-placement claims.",
+          "No. The programme is placement-oriented: we provide experience with external organization projects and structured preparation to improve your chances, but we do not make guaranteed-placement claims.",
       },
       {
         question: "Do I need to complete a Zortex course first?",

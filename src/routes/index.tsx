@@ -32,20 +32,20 @@ import { testimonials } from "@/data/team";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Zortex Solutions | Training, Projects & Externship Programs" },
+      { title: "Zortex Solutions | Practical Training & External Projects" },
       {
         name: "description",
         content:
-          "Zortex Solutions offers practical technical training, real-time projects and externship opportunities in C, Java, Python and full stack development.",
+          "Zortex Solutions offers practical technical training, projects for external organizations and externship opportunities in C, Java, Python and full stack development.",
       },
       {
         property: "og:title",
-        content: "Zortex Solutions | Training, Projects & Externship Programs",
+        content: "Zortex Solutions | Practical Training & External Projects",
       },
       {
         property: "og:description",
         content:
-          "Learn. Build. Experience. Get Career Ready. Practical training, real projects and externship opportunities for students.",
+          "Learn. Build. Experience. Get Career Ready. Practical training, external organization projects and externship opportunities for students.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -69,7 +69,7 @@ const whyZortex = [
   },
   {
     icon: FolderKanban,
-    title: "Real-Time Projects",
+    title: "External Organization Projects",
     description:
       "Apply what you learn to practical projects you can explain, defend and show in a portfolio.",
   },
@@ -110,7 +110,7 @@ function HomePage() {
             <div className="min-w-0">
               <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-card px-3 py-1.5 text-xs font-semibold text-primary shadow-soft">
                 <Sparkles aria-hidden="true" className="size-3.5" />
-                Training · Projects · Externship
+                Training · External Projects · Externship
               </span>
 
               <h1 className="mt-6 text-balance text-4xl font-bold leading-[1.08] text-foreground sm:text-5xl lg:text-6xl">
@@ -119,7 +119,7 @@ function HomePage() {
               </h1>
 
               <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Zortex Solutions gives students practical technical training, real-time projects and
+                Zortex Solutions gives students practical technical training, projects for external organizations and
                 externship opportunities — so you finish with skills and experience, not just notes.
               </p>
 
@@ -139,7 +139,7 @@ function HomePage() {
               </div>
 
               <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-3">
-                {["Practical training", "Real projects", "Mentor support"].map((item) => (
+                {["Practical training", "External Projects", "Mentor support"].map((item) => (
                   <li
                     key={item}
                     className="flex items-center gap-2 text-sm font-medium text-foreground"

@@ -36,7 +36,7 @@ function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="We teach the way the industry actually works"
-        description={`${siteConfig.name} is a training and externship company focused on helping students build practical technical skills, work on real projects and become career ready.`}
+        description={`${siteConfig.name} is a training and externship company focused on helping students build practical technical skills, work on external organization projects and become career ready.`}
         crumbs={[{ label: "About" }]}
       />
 
@@ -54,7 +54,7 @@ function AboutPage() {
                 <p>
                   Zortex Solutions works with students who want more than a certificate. We run
                   structured technical training in classroom and online formats, and an externship
-                  programme where students are assigned real-time projects.
+                  programme where students are assigned projects for external organizations.
                 </p>
                 <p>
                   Every course is built to end in something that runs — code you wrote, understood
@@ -74,7 +74,7 @@ function AboutPage() {
                 <h2 className="mt-4 text-lg font-bold text-foreground">Mission</h2>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   To make technical education practical and career-oriented, so students leave with
-                  demonstrable skills, real project experience and the confidence to apply for
+                  demonstrable skills, experience with external organization projects and the confidence to apply for
                   technical roles.
                 </p>
               </div>
@@ -113,7 +113,7 @@ function AboutPage() {
             </p>
             <p>
               Zortex was created to close it — by teaching practically, insisting on project work,
-              and giving students a real-time project environment through our externship programme.
+              and giving students a external organization project environment through our externship programme.
             </p>
           </div>
           <div className="mt-10 grid gap-5 sm:grid-cols-3">

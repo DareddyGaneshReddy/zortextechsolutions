@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Zortex Solutions | Training, Projects & Externship Programs" },
+      { title: "Zortex Solutions | Practical Training & External Projects" },
       { name: "description", content: siteConfig.description },
       { name: "author", content: siteConfig.name },
       { property: "og:site_name", content: siteConfig.name },
