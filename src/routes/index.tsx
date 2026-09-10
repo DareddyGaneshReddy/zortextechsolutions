@@ -32,20 +32,20 @@ import { testimonials } from "@/data/team";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Zortex Solutions | Practical Training & External Projects" },
+      { title: "Zortex Solutions | Build Skills That Get You Hired" },
       {
         name: "description",
         content:
-          "Zortex Solutions offers practical technical training, projects for external organizations and externship opportunities in C, Java, Python and full stack development.",
+          "Build job-ready technical skills, industry-partner project experience, a credible portfolio and interview confidence with Zortex Solutions.",
       },
       {
         property: "og:title",
-        content: "Zortex Solutions | Practical Training & External Projects",
+        content: "Zortex Solutions | Build Skills That Get You Hired",
       },
       {
         property: "og:description",
         content:
-          "Learn. Build. Experience. Get Career Ready. Practical training, external organization projects and externship opportunities for students.",
+          "Go from knowing the concepts to proving you can do the work. Build skills, project experience and interview confidence with Zortex.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -69,15 +69,15 @@ const whyZortex = [
   },
   {
     icon: FolderKanban,
-    title: "External Organization Projects",
+    title: "Portfolio Proof",
     description:
-      "Apply what you learn to practical projects you can explain, defend and show in a portfolio.",
+      "Build work you can demonstrate, explain and defend when an interviewer asks what you have actually done.",
   },
   {
     icon: Target,
-    title: "Career Preparation",
+    title: "Interview Readiness",
     description:
-      "Understand the career paths open to you and prepare properly for technical interviews.",
+      "Prepare your resume, project stories, technical answers and communication for the roles you want.",
   },
   {
     icon: Users,
@@ -87,17 +87,17 @@ const whyZortex = [
   },
   {
     icon: Briefcase,
-    title: "Externship Opportunities",
+    title: "Industry-Partner Experience",
     description:
-      "Experience professional project delivery for external organizations and the discipline they demand.",
+      "Build from an external organization’s requirements and experience professional reviews, feedback and delivery.",
   },
 ];
 
 const journey = [
   { title: "Learn", description: "Build strong fundamentals with a structured, practical syllabus." },
-  { title: "Build", description: "Turn concepts into working projects, module by module." },
-  { title: "Experience", description: "Deliver a project for an external organization following professional standards." },
-  { title: "Get Career Ready", description: "Prepare your portfolio, resume and interview skills." },
+  { title: "Build", description: "Turn concepts into portfolio work that proves your ability." },
+  { title: "Experience", description: "Deliver an industry-partner project through a professional workflow." },
+  { title: "Compete", description: "Apply with a stronger resume, credible experience and interview confidence." },
 ];
 
 function HomePage() {
@@ -110,23 +110,23 @@ function HomePage() {
             <div className="min-w-0">
               <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-card px-3 py-1.5 text-xs font-semibold text-primary shadow-soft">
                 <Sparkles aria-hidden="true" className="size-3.5" />
-                Training · External Projects · Externship
+                Your bridge from campus to career
               </span>
 
               <h1 className="mt-6 text-balance text-4xl font-bold leading-[1.08] text-foreground sm:text-5xl lg:text-6xl">
-                Learn. Build. Experience.{" "}
-                <span className="text-gradient-brand">Get Career Ready.</span>
+                Don&apos;t just learn tech.{" "}
+                <span className="text-gradient-brand">Prove you can do the job.</span>
               </h1>
 
               <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Zortex Solutions gives students practical technical training, projects for external organizations and
-                externship opportunities — so you finish with skills and experience, not just notes.
+                Build the skills, real project experience, portfolio and interview confidence that
+                help students and recent graduates stand out for their first technical role.
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <Button asChild variant="hero" size="xl">
                   <Link to="/programs">
-                    Explore Programs
+                    Start Your Career Path
                     <ArrowRight aria-hidden="true" />
                   </Link>
                 </Button>
@@ -139,7 +139,7 @@ function HomePage() {
               </div>
 
               <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-3">
-                {["Practical training", "External Projects", "Mentor support"].map((item) => (
+                {["Job-relevant skills", "Industry-partner projects", "Interview preparation"].map((item) => (
                   <li
                     key={item}
                     className="flex items-center gap-2 text-sm font-medium text-foreground"
@@ -163,6 +163,16 @@ function HomePage() {
                 height={1280}
                 className="relative mx-auto w-full max-w-lg drop-shadow-xl"
               />
+              <div className="relative mx-auto -mt-8 grid max-w-lg grid-cols-3 border border-border bg-card shadow-lift">
+                {[["01", "Skills"], ["02", "Experience"], ["03", "Career proof"]].map(
+                  ([number, label]) => (
+                    <div key={number} className="min-w-0 border-r border-border px-2 py-3 text-center last:border-r-0 sm:px-4">
+                      <span className="block text-xs font-bold text-primary">{number}</span>
+                      <span className="mt-0.5 block text-xs font-semibold text-foreground sm:text-sm">{label}</span>
+                    </div>
+                  ),
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -175,8 +185,8 @@ function HomePage() {
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Why Zortex"
-            title="Built around what actually gets students hired"
-            description="Skills, projects and preparation — the three things employers look for, taught together."
+            title="Everything employers expect, built into one journey"
+            description="Technical ability, proof of work, professional experience and interview preparation—developed together."
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {whyZortex.map((item) => {
@@ -208,7 +218,8 @@ function HomePage() {
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="The Zortex journey"
-            title="From first line of code to career ready"
+            title="From learning the skill to competing for the role"
+            description="Every stage removes one more reason for an employer to say no."
           />
           <ol className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {journey.map((step, index) => (
@@ -234,8 +245,8 @@ function HomePage() {
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Programs"
-            title="Three ways to learn with Zortex"
-            description="Choose structured training or gain experience delivering projects for external organizations."
+            title="Choose how you will become job ready"
+            description="Build your foundation in class or online, then gain credible workplace experience through Zortex Externship."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {programs.map((program) => (
@@ -250,8 +261,8 @@ function HomePage() {
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Courses"
-            title="Courses that build real capability"
-            description="Every course includes a structured syllabus, practical projects and career direction."
+            title="Learn what the role demands—not just what the syllabus covers"
+            description="Every course connects technical fundamentals to practical projects, portfolio proof and clear career direction."
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {courses.map((course) => (
@@ -350,7 +361,11 @@ function HomePage() {
         description={`Common questions about ${siteConfig.name}, our programmes and our courses.`}
       />
 
-      <CtaBand />
+      <CtaBand
+        title="Your first technical role starts with proof"
+        description="Build the skills, project experience and interview confidence to apply as a candidate employers can take seriously."
+        primaryLabel="Start Your Career Path"
+      />
     </>
   );
 }
