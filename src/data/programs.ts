@@ -181,20 +181,20 @@ export const programs: Program[] = [
     slug: "externship",
     name: "Zortex Externship",
     mode: "Externship",
-    tagline: "Work on a real-time project with placement-oriented guidance.",
+    tagline: "Deliver projects for external organizations with structured career-readiness preparation.",
     summary:
-      "An externship programme where students are assigned a real-time project and supported with guidance aimed at helping them get placed.",
+      "An externship where you deliver solutions for external organizations, gaining the practical experience and career-readiness skills employers actually value.",
     overview: [
       "Zortex Externship is designed for students who have learned the fundamentals and now need real project exposure to become employable.",
-      "Each student is assigned a real-time project and works through it the way a team would in a company — requirements, implementation, review and delivery — with mentors supporting the process.",
+      "Each student delivers a project for an external organization, working through it the way a professional team would — requirements, implementation, review and delivery — with mentors supporting the process.",
       "Alongside the project, students receive placement-oriented guidance covering resume, portfolio and interview preparation. Zortex supports the process; we do not promise guaranteed placement.",
     ],
     icon: Rocket,
     highlights: [
       {
-        title: "Real-Time Project Experience",
+        title: "External Organization Projects",
         description:
-          "You are assigned an actual project and work through it end to end, so you can talk about real decisions, not tutorial exercises.",
+          "You deliver a solution for an external organization end to end, so you can talk about real decisions, not tutorial exercises.",
       },
       {
         title: "Placement-Oriented Guidance",
@@ -204,7 +204,7 @@ export const programs: Program[] = [
     ],
     benefits: [
       {
-        title: "Real project exposure",
+        title: "Direct experience with external organizations",
         description: "Work in an environment that mirrors how software is actually built.",
       },
       {
@@ -230,8 +230,8 @@ export const programs: Program[] = [
     ],
     approach: [
       {
-        title: "Project assignment",
-        description: "You are matched with a real-time project suited to your course and level.",
+        title: "External Organization Matching",
+        description: "You are matched with a project for an external organization suited to your course and level.",
       },
       {
         title: "Requirement breakdown",
@@ -257,16 +257,16 @@ export const programs: Program[] = [
       "Learners who want to move from tutorials to real work",
     ],
     expectations: [
-      "A real-time project assignment with mentor support",
+      "Project delivery for an external organization with mentor support",
       "Professional development workflow and reviews",
       "Resume, portfolio and interview preparation",
       "Honest feedback on your readiness and what to improve",
     ],
     faqs: [
       {
-        question: "What kind of project will I be assigned?",
+        question: "What kind of external projects will I work on?",
         answer:
-          "You are assigned a real-time project matched to your course and current skill level, so the work is challenging but achievable.",
+          "You are assigned a project for an external organization matched to your course and current skill level, so the work is challenging but achievable.",
       },
       {
         question: "Is placement guaranteed?",
