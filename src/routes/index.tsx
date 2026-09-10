@@ -89,14 +89,14 @@ const whyZortex = [
     icon: Briefcase,
     title: "Externship Opportunities",
     description:
-      "Get exposure to real-world project environments and the discipline they demand.",
+      "Experience professional project delivery for external organizations and the discipline they demand.",
   },
 ];
 
 const journey = [
   { title: "Learn", description: "Build strong fundamentals with a structured, practical syllabus." },
   { title: "Build", description: "Turn concepts into working projects, module by module." },
-  { title: "Experience", description: "Work on a real-time project the way a team would." },
+  { title: "Experience", description: "Deliver a project for an external organization following professional standards." },
   { title: "Get Career Ready", description: "Prepare your portfolio, resume and interview skills." },
 ];
 
@@ -235,7 +235,7 @@ function HomePage() {
           <SectionHeader
             eyebrow="Programs"
             title="Three ways to learn with Zortex"
-            description="Choose classroom training, online training, or a real-time project externship."
+            description="Choose structured training or gain experience delivering projects for external organizations."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {programs.map((program) => (

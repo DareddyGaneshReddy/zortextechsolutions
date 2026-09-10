@@ -37,7 +37,7 @@ function ProgramsPage() {
       <PageHero
         eyebrow="Programs"
         title="Three programmes, one goal — making you career ready"
-        description="Whether you learn best in a classroom, online, or by working on a real project, there is a Zortex programme designed for you."
+        description="Whether you learn best in a classroom, online, or by delivering projects for external organizations, there is a Zortex programme designed for you."
         crumbs={[{ label: "Programs" }]}
       />
 
