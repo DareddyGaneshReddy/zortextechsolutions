@@ -350,6 +350,14 @@ function HomePage() {
                   <ArrowRight aria-hidden="true" />
                 </Link>
               </Button>
+              <img
+                src={studentsHrInterview}
+                alt="A student answering questions in a mock HR interview with an experienced HR professional"
+                width={1280}
+                height={960}
+                loading="lazy"
+                className="mt-8 h-56 w-full rounded-2xl border border-border object-cover shadow-lift sm:h-64"
+              />
             </div>
 
             <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
