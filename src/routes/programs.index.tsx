@@ -16,13 +16,13 @@ export const Route = createFileRoute("/programs/")({
       {
         name: "description",
         content:
-          "Explore Zortex programmes: Edge offline training, Elite online training and the Zortex Externship with real-time project experience.",
+          "Explore Zortex programmes: Edge offline training, Elite online training and the Zortex Externship with projects for external organizations.",
       },
       { property: "og:title", content: "Programs | Zortex Solutions" },
       {
         property: "og:description",
         content:
-          "Offline training, online training and a real-time project externship — choose the Zortex programme that fits you.",
+          "Offline training, online training and a externship focused on external organization projects — choose the Zortex programme that fits you.",
       },
       { property: "og:url", content: "/programs" },
     ],
