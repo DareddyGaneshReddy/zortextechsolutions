@@ -35,7 +35,7 @@ export const Route = createFileRoute("/resources/project-ideas")({
 type DifficultyFilter = Difficulty | "All";
 
 const difficultyStyles: Record<Difficulty, string> = {
-  Beginner: "border-accent/30 bg-accent-soft text-accent-strong",
+  Beginner: "border-accent/30 bg-accent-soft text-accent",
   Intermediate: "border-primary/25 bg-primary-soft text-primary",
   Advanced: "border-border bg-secondary text-secondary-foreground",
 };
