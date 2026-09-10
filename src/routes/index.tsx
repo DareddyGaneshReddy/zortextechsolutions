@@ -267,6 +267,52 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Life at Zortex */}
+      <section className="section-y">
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <img
+                src={studentsCollaborating}
+                alt="Students working together on code during a Zortex Solutions training session"
+                width={1280}
+                height={960}
+                loading="lazy"
+                className="h-56 w-full rounded-2xl border border-border object-cover shadow-lift sm:h-72"
+              />
+              <img
+                src={studentsMentoring}
+                alt="A mentor guiding two students through a project review at Zortex Solutions"
+                width={1280}
+                height={960}
+                loading="lazy"
+                className="h-56 w-full rounded-2xl border border-border object-cover shadow-lift sm:mt-8 sm:h-72"
+              />
+            </div>
+            <div className="min-w-0">
+              <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-card px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-primary shadow-soft">
+                <Users aria-hidden="true" className="size-3.5" />
+                Life at Zortex
+              </span>
+              <h2 className="mt-5 text-3xl font-bold leading-tight text-foreground sm:text-4xl">
+                Learn the way teams actually work
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                Students build in small groups, review each other&apos;s work and get direct
+                guidance from mentors—so writing code, explaining decisions and shipping to a
+                deadline all feel familiar before the first interview.
+              </p>
+              <Button asChild variant="outlineBrand" size="lg" className="mt-7">
+                <Link to="/programs">
+                  See the Programs
+                  <ArrowRight aria-hidden="true" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Programs */}
       <section className="section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
