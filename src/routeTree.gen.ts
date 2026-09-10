@@ -17,6 +17,8 @@ import { Route as CoursesSlugRouteImport } from './routes/courses.$slug'
 import { Route as ProgramsIndexRouteImport } from './routes/programs.index'
 import { Route as ProgramsSlugRouteImport } from './routes/programs.$slug'
 import { Route as ResourcesIndexRouteImport } from './routes/resources.index'
+import { Route as ResourcesProjectIdeasRouteImport } from './routes/resources.project-ideas'
+import { Route as ResourcesSyllabusesRouteImport } from './routes/resources.syllabuses'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -58,6 +60,16 @@ const ResourcesIndexRoute = ResourcesIndexRouteImport.update({
   path: '/resources/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ResourcesProjectIdeasRoute = ResourcesProjectIdeasRouteImport.update({
+  id: '/resources/project-ideas',
+  path: '/resources/project-ideas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResourcesSyllabusesRoute = ResourcesSyllabusesRouteImport.update({
+  id: '/resources/syllabuses',
+  path: '/resources/syllabuses',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -65,6 +77,8 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/courses/$slug': typeof CoursesSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/resources/project-ideas': typeof ResourcesProjectIdeasRoute
+  '/resources/syllabuses': typeof ResourcesSyllabusesRoute
   '/courses/': typeof CoursesIndexRoute
   '/programs/': typeof ProgramsIndexRoute
   '/resources/': typeof ResourcesIndexRoute
@@ -75,6 +89,8 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/courses/$slug': typeof CoursesSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/resources/project-ideas': typeof ResourcesProjectIdeasRoute
+  '/resources/syllabuses': typeof ResourcesSyllabusesRoute
   '/courses': typeof CoursesIndexRoute
   '/programs': typeof ProgramsIndexRoute
   '/resources': typeof ResourcesIndexRoute
@@ -86,6 +102,8 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/courses/$slug': typeof CoursesSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/resources/project-ideas': typeof ResourcesProjectIdeasRoute
+  '/resources/syllabuses': typeof ResourcesSyllabusesRoute
   '/courses/': typeof CoursesIndexRoute
   '/programs/': typeof ProgramsIndexRoute
   '/resources/': typeof ResourcesIndexRoute
@@ -98,6 +116,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/courses/$slug'
     | '/programs/$slug'
+    | '/resources/project-ideas'
+    | '/resources/syllabuses'
     | '/courses/'
     | '/programs/'
     | '/resources/'
@@ -108,6 +128,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/courses/$slug'
     | '/programs/$slug'
+    | '/resources/project-ideas'
+    | '/resources/syllabuses'
     | '/courses'
     | '/programs'
     | '/resources'
@@ -118,6 +140,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/courses/$slug'
     | '/programs/$slug'
+    | '/resources/project-ideas'
+    | '/resources/syllabuses'
     | '/courses/'
     | '/programs/'
     | '/resources/'
@@ -129,6 +153,8 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   CoursesSlugRoute: typeof CoursesSlugRoute
   ProgramsSlugRoute: typeof ProgramsSlugRoute
+  ResourcesProjectIdeasRoute: typeof ResourcesProjectIdeasRoute
+  ResourcesSyllabusesRoute: typeof ResourcesSyllabusesRoute
   CoursesIndexRoute: typeof CoursesIndexRoute
   ProgramsIndexRoute: typeof ProgramsIndexRoute
   ResourcesIndexRoute: typeof ResourcesIndexRoute
@@ -192,6 +218,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ResourcesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/resources/project-ideas': {
+      id: '/resources/project-ideas'
+      path: '/resources/project-ideas'
+      fullPath: '/resources/project-ideas'
+      preLoaderRoute: typeof ResourcesProjectIdeasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resources/syllabuses': {
+      id: '/resources/syllabuses'
+      path: '/resources/syllabuses'
+      fullPath: '/resources/syllabuses'
+      preLoaderRoute: typeof ResourcesSyllabusesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -201,6 +241,8 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   CoursesSlugRoute: CoursesSlugRoute,
   ProgramsSlugRoute: ProgramsSlugRoute,
+  ResourcesProjectIdeasRoute: ResourcesProjectIdeasRoute,
+  ResourcesSyllabusesRoute: ResourcesSyllabusesRoute,
   CoursesIndexRoute: CoursesIndexRoute,
   ProgramsIndexRoute: ProgramsIndexRoute,
   ResourcesIndexRoute: ResourcesIndexRoute,
