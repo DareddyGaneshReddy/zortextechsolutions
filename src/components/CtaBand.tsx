@@ -12,8 +12,8 @@ interface CtaBandProps {
 }
 
 export function CtaBand({
-  title = "Ready to start building real skills?",
-  description = "Explore our programmes and courses, or talk to our team about the right path for you.",
+  title = "Ready to become a candidate employers remember?",
+  description = "Build practical skills, credible project experience and the confidence to perform in interviews.",
   primaryLabel = "Explore Programs",
   primaryTo = "/programs",
 }: CtaBandProps) {

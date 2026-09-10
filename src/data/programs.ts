@@ -180,32 +180,32 @@ export const programs: Program[] = [
   {
     slug: "externship",
     name: "Zortex Externship",
-    mode: "Externship",
-    tagline: "Deliver projects for external organizations with structured career-readiness preparation.",
+    mode: "Industry experience",
+    tagline: "Build an industry-partner project and prepare to compete for your first role.",
     summary:
-      "An externship where you deliver solutions for external organizations, gaining the practical experience and career-readiness skills employers actually value.",
+      "Build with an external organization, follow a professional workflow and gain credible experience you can discuss in interviews.",
     overview: [
-      "Zortex Externship is designed for students who have learned the fundamentals and now need real project exposure to become employable.",
-      "Each student delivers a project for an external organization, working through it the way a professional team would — requirements, implementation, review and delivery — with mentors supporting the process.",
-      "Alongside the project, students receive placement-oriented guidance covering resume, portfolio and interview preparation. Zortex supports the process; we do not promise guaranteed placement.",
+      "Zortex Externship is designed for students and recent graduates who know the fundamentals but still need the credible experience employers expect.",
+      "Through an Industry-Partner Project, you build with an external organization from real requirements—not a copied tutorial. You work through planning, implementation, reviews and delivery with mentor support.",
+      "Alongside the project, you strengthen your resume, portfolio, communication and interview performance. You leave prepared to apply with evidence of what you can do, not just a certificate.",
     ],
     icon: Rocket,
     highlights: [
       {
-        title: "External Organization Projects",
+        title: "Industry-Partner Projects",
         description:
-          "You deliver a solution for an external organization end to end, so you can talk about real decisions, not tutorial exercises.",
+          "Build directly from an external organization’s requirements and experience how real project decisions, feedback and delivery work.",
       },
       {
-        title: "Placement-Oriented Guidance",
+        title: "Job-Readiness Guidance",
         description:
-          "Resume, portfolio, communication and interview preparation aimed at helping you get placed in a real company.",
+          "Turn your work into a stronger resume, credible portfolio story and confident interview answers for the roles you want.",
       },
     ],
     benefits: [
       {
-        title: "Direct experience with external organizations",
-        description: "Work in an environment that mirrors how software is actually built.",
+        title: "Industry-partner experience",
+        description: "Build from real organizational requirements in a professional project environment.",
       },
       {
         title: "Portfolio you can defend",
@@ -230,8 +230,8 @@ export const programs: Program[] = [
     ],
     approach: [
       {
-        title: "External Organization Matching",
-        description: "You are matched with a project for an external organization suited to your course and level.",
+        title: "Industry-partner matching",
+        description: "You are matched with an industry-partner project suited to your course and level.",
       },
       {
         title: "Requirement breakdown",
@@ -251,27 +251,27 @@ export const programs: Program[] = [
       },
     ],
     audience: [
-      "Students who know the basics but lack real project experience",
+      "Students who know the basics but lack credible professional project experience",
       "Final-year students preparing for placements",
       "Graduates who need practical experience on their resume",
       "Learners who want to move from tutorials to real work",
     ],
     expectations: [
-      "Project delivery for an external organization with mentor support",
+      "An industry-partner project with mentor support",
       "Professional development workflow and reviews",
       "Resume, portfolio and interview preparation",
       "Honest feedback on your readiness and what to improve",
     ],
     faqs: [
       {
-        question: "What kind of external projects will I work on?",
+        question: "What kind of industry-partner project will I work on?",
         answer:
-          "You are assigned a project for an external organization matched to your course and current skill level, so the work is challenging but achievable.",
+          "You work on a project shaped by an external organization’s requirements and matched to your course and current skill level.",
       },
       {
         question: "Is placement guaranteed?",
         answer:
-          "No. The programme is placement-oriented: we provide real project experience and structured preparation to improve your chances, but we do not make guaranteed-placement claims.",
+          "No programme can responsibly guarantee a job. Zortex helps you become a stronger candidate through industry-partner experience, portfolio proof and structured interview preparation.",
       },
       {
         question: "Do I need to complete a Zortex course first?",

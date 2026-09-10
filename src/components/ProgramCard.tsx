@@ -6,9 +6,19 @@ import type { Program } from "@/data/programs";
 
 export function ProgramCard({ program }: { program: Program }) {
   const Icon = program.icon;
+  const isExternship = program.slug === "externship";
 
   return (
-    <article className="card-hover flex h-full flex-col rounded-2xl border border-border bg-card p-7 shadow-soft">
+    <article
+      className={`card-hover relative flex h-full flex-col overflow-hidden rounded-2xl border bg-card p-7 shadow-soft ${
+        isExternship ? "border-primary/40 shadow-lift" : "border-border"
+      }`}
+    >
+      {isExternship ? (
+        <span className="absolute right-0 top-0 bg-gradient-brand px-3 py-1.5 text-xs font-semibold text-primary-foreground">
+          Closest to real work
+        </span>
+      ) : null}
       <span
         aria-hidden="true"
         className="grid size-12 place-items-center rounded-xl bg-primary-soft text-primary"
@@ -22,6 +32,12 @@ export function ProgramCard({ program }: { program: Program }) {
 
       <h3 className="mt-3 text-xl font-bold text-foreground">{program.name}</h3>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{program.summary}</p>
+
+      {isExternship ? (
+        <p className="mt-4 border-l-2 border-primary pl-3 text-sm font-semibold text-foreground">
+          Industry-Partner Projects
+        </p>
+      ) : null}
 
       <ul className="mt-5 flex-1 space-y-2.5">
         {program.benefits.slice(0, 3).map((benefit) => (
