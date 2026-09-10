@@ -135,7 +135,8 @@ function InterviewQuestionsPage() {
                         </span>
                         <span className="mt-1.5 flex flex-wrap items-center gap-2">
                           <span className="rounded-md border border-border bg-surface px-2 py-0.5 text-xs text-muted-foreground">
-                            {item.category}
+                            {questionCategories.find((c) => c.value === item.category)?.label ??
+                              item.category}
                           </span>
                           <span className="rounded-md border border-primary/25 bg-primary-soft px-2 py-0.5 text-xs font-medium text-primary">
                             {item.difficulty}
