@@ -7,11 +7,14 @@ import {
   Code2,
   Compass,
   FolderKanban,
+  Handshake,
   Layers,
   MessageCircle,
+  MessagesSquare,
   Quote,
   Sparkles,
   Target,
+  UserRoundCheck,
   Users,
 } from "lucide-react";
 
@@ -37,7 +40,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Build job-ready technical skills, industry-partner project experience, a credible portfolio and interview confidence with Zortex Solutions.",
+          "Build job-ready technical skills, industry-partner project experience, a credible portfolio and HR interview confidence with Zortex Solutions.",
       },
       {
         property: "og:title",
@@ -99,6 +102,24 @@ const journey = [
   { title: "Build", description: "Turn concepts into portfolio work that proves your ability." },
   { title: "Experience", description: "Deliver an industry-partner project through a professional workflow." },
   { title: "Compete", description: "Apply with a stronger resume, credible experience and interview confidence." },
+];
+
+const hrTrainingTopics = [
+  {
+    icon: UserRoundCheck,
+    title: "Professional Introduction",
+    description: "Learn to introduce yourself clearly and connect your education, skills and projects to the role.",
+  },
+  {
+    icon: MessagesSquare,
+    title: "HR Question Practice",
+    description: "Prepare thoughtful answers for common questions about strengths, goals, challenges and teamwork.",
+  },
+  {
+    icon: Handshake,
+    title: "Mock Interviews & Feedback",
+    description: "Practise realistic HR rounds and receive direct feedback from experienced HR professionals.",
+  },
 ];
 
 function HomePage() {
@@ -249,7 +270,7 @@ function HomePage() {
           <SectionHeader
             eyebrow="Programs"
             title="Choose how you will become job ready"
-            description="Build your foundation in class or online, then gain credible workplace experience through Zortex Externship."
+            description="Build your foundation in class or online, gain credible workplace experience through Zortex Externship, and prepare for HR rounds with experienced professionals."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {programs.map((program) => (
@@ -259,8 +280,59 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Courses */}
+      {/* HR Training */}
       <section className="border-y border-border bg-surface section-y">
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+            <div>
+              <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-card px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-primary shadow-soft">
+                <Users aria-hidden="true" className="size-3.5" />
+                HR Training
+              </span>
+              <h2 className="mt-5 text-3xl font-bold leading-tight text-foreground sm:text-4xl">
+                Be ready for the conversation beyond your technical skills
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                Experienced HR professionals help students prepare for HR interview rounds with practical guidance, realistic practice and personal feedback.
+              </p>
+              <Button asChild variant="hero" size="lg" className="mt-7">
+                <Link to="/contact">
+                  Enquire About HR Training
+                  <ArrowRight aria-hidden="true" />
+                </Link>
+              </Button>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+              {hrTrainingTopics.map((topic) => {
+                const Icon = topic.icon;
+                return (
+                  <article
+                    key={topic.title}
+                    className="flex flex-col gap-4 rounded-2xl border border-border bg-card p-5 shadow-soft lg:flex-row lg:items-start"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="grid size-11 shrink-0 place-items-center rounded-xl bg-accent-soft text-brand"
+                    >
+                      <Icon className="size-5" />
+                    </span>
+                    <div>
+                      <h3 className="text-base font-bold text-foreground">{topic.title}</h3>
+                      <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                        {topic.description}
+                      </p>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Courses */}
+      <section className="section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Courses"
