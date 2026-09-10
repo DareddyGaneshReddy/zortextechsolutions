@@ -19,6 +19,9 @@ import {
 } from "lucide-react";
 
 import heroImage from "@/assets/hero-illustration.jpg";
+import studentsCollaborating from "@/assets/students-collaborating.jpg";
+import studentsHrInterview from "@/assets/students-hr-interview.jpg";
+import studentsMentoring from "@/assets/students-mentoring.jpg";
 import { ClientLogos } from "@/components/ClientLogos";
 import { CourseCard } from "@/components/CourseCard";
 import { CtaBand } from "@/components/CtaBand";
