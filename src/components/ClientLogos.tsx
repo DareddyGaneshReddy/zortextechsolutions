@@ -1,4 +1,3 @@
-import daysTechLogo from "@/assets/daystech-solutions.jpg.asset.json";
 import venixoLogo from "@/assets/venixo-technologies.png.asset.json";
 import zodeckLogo from "@/assets/zodeck-solutions.jpg.asset.json";
 
@@ -10,8 +9,8 @@ const clients = [
   },
   {
     name: "DaysTech Solutions",
-    logo: daysTechLogo.url,
-    imageClassName: "size-20",
+    logo: null,
+    imageClassName: "",
   },
   {
     name: "Venixo Technologies",
@@ -36,16 +35,28 @@ export function ClientLogos() {
             {clients.map((client) => (
               <li
                 key={client.name}
-                className="flex min-h-32 items-center justify-center bg-card px-6 py-5"
+                className="flex min-h-36 flex-col items-center justify-center gap-4 bg-card px-6 py-5"
               >
-                <img
-                  src={client.logo}
-                  alt={`${client.name} logo`}
-                  width={220}
-                  height={100}
-                  loading="lazy"
-                  className={`${client.imageClassName} object-contain`}
-                />
+                {client.logo ? (
+                  <img
+                    src={client.logo}
+                    alt={`${client.name} logo`}
+                    width={220}
+                    height={100}
+                    loading="lazy"
+                    className={`${client.imageClassName} object-contain`}
+                  />
+                ) : (
+                  <span
+                    aria-hidden="true"
+                    className="grid size-20 place-items-center rounded-lg border border-border bg-surface text-2xl font-bold text-foreground"
+                  >
+                    DT
+                  </span>
+                )}
+                <span className="text-center text-sm font-semibold text-foreground">
+                  {client.name}
+                </span>
               </li>
             ))}
           </ul>
