@@ -12,15 +12,18 @@ export const siteConfig = {
   url: "https://zortexsolutions.com",
 
   contact: {
-    phone: "+91 00000 00000",
-    phoneHref: "tel:+910000000000",
-    email: "contact@zortexsolutions.com",
-    emailHref: "mailto:contact@zortexsolutions.com",
-    addressLines: ["Zortex Solutions", "Address line 1 — to be updated", "City, State, PIN"],
+    phone: "+91 91777 32225",
+    phoneHref: "tel:+919177732225",
+    email: "extern.partner@zortexsolutions.com",
+    emailHref: "mailto:extern.partner@zortexsolutions.com",
+    addressLines: [
+      "Vijayawada Office - Bandar Road, Labbipeta, Vijayawada, Andhra Pradesh",
+      "Hyderabad Office - To be updated",
+    ],
   },
 
   /** WhatsApp number in international format, digits only. */
-  whatsappNumber: "910000000000",
+  whatsappNumber: "919177732225",
   whatsappMessage:
     "Hi, I'm interested in learning more about the Programs offered by Zortex Solutions.",
 
