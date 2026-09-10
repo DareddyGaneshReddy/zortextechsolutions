@@ -56,8 +56,8 @@ function CoursesPage() {
     <>
       <PageHero
         eyebrow="Courses"
-        title="Courses designed around building, not memorising"
-        description="Five focused courses with structured syllabuses, practical projects, technologies used in industry and clear career paths."
+        title="Learn the skills you need to compete for technical roles"
+        description="Five focused courses that take you from fundamentals to practical builds, portfolio proof and a clear career direction."
         crumbs={[{ label: "Courses" }]}
       />
 
@@ -74,8 +74,8 @@ function CoursesPage() {
       <FaqSection items={courseFaqs} title="Course questions" />
 
       <CtaBand
-        title="Want help choosing a course?"
-        description="Tell us your background and goal, and we'll suggest the course that fits best."
+        title="Choose the course that moves you toward a real role"
+        description="Tell us your background and career goal, and we'll help you choose the most relevant path."
         primaryLabel="Contact Us"
         primaryTo="/contact"
       />

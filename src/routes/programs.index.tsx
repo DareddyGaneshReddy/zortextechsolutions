@@ -36,8 +36,8 @@ function ProgramsPage() {
     <>
       <PageHero
         eyebrow="Programs"
-        title="Three programmes, one goal — making you career ready"
-        description="Whether you learn best in a classroom, online, or by delivering projects for external organizations, there is a Zortex programme designed for you."
+        title="A complete path from learning to employability"
+        description="Build strong foundations through Edge or Elite, then turn your knowledge into credible workplace experience through Zortex Externship."
         crumbs={[{ label: "Programs" }]}
       />
 
@@ -55,14 +55,14 @@ function ProgramsPage() {
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="What every programme includes"
-            title="A common standard across all Zortex programmes"
+            title="Built to make you a stronger job candidate"
           />
           <div className="mx-auto mt-12 grid max-w-4xl gap-4 sm:grid-cols-2">
             {[
               "A structured, practical syllabus",
               "Hands-on coding in every module",
               "Mentor guidance and code review",
-              "Project work you can show in a portfolio",
+              "Portfolio work you can explain in interviews",
               "Career direction for your chosen course",
               "Access to Zortex learning resources",
             ].map((item) => (
@@ -81,8 +81,8 @@ function ProgramsPage() {
       <FaqSection items={generalFaqs.slice(0, 5)} title="Programme questions" />
 
       <CtaBand
-        title="Not sure which programme fits you?"
-        description="Tell us where you are in your learning journey and we'll help you pick the right path."
+        title="Not sure how to become job ready?"
+        description="Tell us what you know today and the role you want. We'll help you identify the right next step."
         primaryLabel="Contact Us"
         primaryTo="/contact"
       />
