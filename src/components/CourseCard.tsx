@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, GraduationCap } from "lucide-react";
+import { ArrowRight, BriefcaseBusiness, GraduationCap, IndianRupee } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { CourseLogo } from "@/components/CourseLogo";
@@ -17,7 +17,7 @@ export function CourseCard({ course }: { course: Course }) {
       </div>
 
       <h3 className="mt-5 text-xl font-bold text-foreground">{course.name}</h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
         {course.shortDescription}
       </p>
 
@@ -30,6 +30,33 @@ export function CourseCard({ course }: { course: Course }) {
             {tech}
           </span>
         ))}
+      </div>
+
+      <div className="mt-5 flex-1 border-t border-border pt-5">
+        <div className="flex items-start gap-3">
+          <BriefcaseBusiness aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-primary" />
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wide text-foreground">
+              Career Opportunities
+            </p>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              {course.careerOpportunities.join(" · ")}
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-4 flex items-start gap-3">
+          <IndianRupee aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-accent" />
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wide text-foreground">
+              Average Fresher Package
+            </p>
+            <p className="mt-1 text-base font-bold text-foreground">{course.averagePackage}</p>
+            <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+              Indicative India range; varies by skills, role, employer, location and interview performance.
+            </p>
+          </div>
+        </div>
       </div>
 
       <Button asChild variant="outlineBrand" className="mt-6 w-full justify-between">
