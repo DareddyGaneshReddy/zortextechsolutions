@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 
 import heroImage from "@/assets/hero-illustration.jpg";
+import { ClientLogos } from "@/components/ClientLogos";
 import { CourseCard } from "@/components/CourseCard";
 import { CtaBand } from "@/components/CtaBand";
 import { FaqSection } from "@/components/FaqSection";
@@ -179,6 +180,8 @@ function HomePage() {
       </section>
 
       <StatsSection />
+
+      <ClientLogos />
 
       {/* Why Zortex */}
       <section className="section-y">
