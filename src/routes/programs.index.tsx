@@ -22,7 +22,7 @@ export const Route = createFileRoute("/programs/")({
       {
         property: "og:description",
         content:
-          "Offline training, online training and a externship focused on external organization projects — choose the Zortex programme that fits you.",
+          "Offline training, online training and an externship built around industry-partner projects—choose the path that moves you toward a technical role.",
       },
       { property: "og:url", content: "/programs" },
     ],

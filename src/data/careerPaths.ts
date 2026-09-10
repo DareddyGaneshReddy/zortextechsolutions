@@ -134,7 +134,7 @@ export const careerPaths: CareerPath[] = [
     direction:
       "Full stack roles value engineers who can reason about the whole system. This track prepares you for product teams and service development.",
     nextSteps: [
-      "Take Zortex Externship for experience with external organization projects",
+      "Take Zortex Externship for industry-partner project experience",
       "Learn microservices, caching and cloud deployment",
       "Build a portfolio of two or three complete applications",
     ],
@@ -173,7 +173,7 @@ export const careerPaths: CareerPath[] = [
     direction:
       "Python full stack skills suit product startups and internal platform teams where speed of delivery matters.",
     nextSteps: [
-      "Take Zortex Externship for experience with external organization projects",
+      "Take Zortex Externship for industry-partner project experience",
       "Learn Docker, CI/CD and cloud hosting",
       "Add background jobs and caching to your projects",
     ],
