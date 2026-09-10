@@ -12,6 +12,8 @@ export interface Course {
   /** Two letter glyph used in the course card mark. */
   glyph: string;
   level: string;
+  careerOpportunities: string[];
+  averagePackage: string;
   overview: string[];
   outcomes: { title: string; description: string }[];
   modules: SyllabusModule[];
@@ -32,6 +34,8 @@ export const courses: Course[] = [
     shortDescription:
       "Build your programming foundation with memory, logic and problem solving in C.",
     level: "Beginner",
+    careerOpportunities: ["Junior Software Developer", "Embedded Systems Trainee"],
+    averagePackage: "₹3–5 LPA",
     overview: [
       "C is the best place to build a real understanding of how programs work. You learn how memory is allocated, how data is structured and how logic is expressed with very few abstractions in the way.",
       "This course focuses on writing correct, readable programs and on the problem-solving habits that carry into every language you learn afterwards.",
@@ -164,6 +168,8 @@ export const courses: Course[] = [
     shortDescription:
       "Master object-oriented programming, collections and database access with Java.",
     level: "Beginner to Intermediate",
+    careerOpportunities: ["Java Developer", "Backend Developer"],
+    averagePackage: "₹3.5–6 LPA",
     overview: [
       "Java remains one of the most widely used languages in industry, especially for backend and enterprise systems. This course builds a strong object-oriented foundation and then applies it.",
       "You move from core syntax to OOP design, collections, exception handling and database access, so you can build real applications rather than isolated examples.",
@@ -296,6 +302,8 @@ export const courses: Course[] = [
     shortDescription:
       "Learn Python for scripting, automation, data handling and backend development.",
     level: "Beginner",
+    careerOpportunities: ["Python Developer", "Automation Engineer"],
+    averagePackage: "₹3.5–6 LPA",
     overview: [
       "Python is the fastest way to become productive as a programmer, and it opens doors into backend development, automation, data work and testing.",
       "This course covers the language properly — not just syntax — and then applies it to files, APIs, databases and automation tasks you can show in a portfolio.",
@@ -429,6 +437,8 @@ export const courses: Course[] = [
     shortDescription:
       "Build complete web applications with Java, Spring Boot, REST APIs and React.",
     level: "Intermediate",
+    careerOpportunities: ["Java Full Stack Developer", "Backend Developer"],
+    averagePackage: "₹4–7 LPA",
     overview: [
       "This course takes you from Java fundamentals to a complete, deployable web application with a Spring Boot backend and a modern React frontend.",
       "You learn how the layers connect — database, API, UI and deployment — which is exactly what full stack roles expect you to be able to reason about.",
@@ -575,6 +585,8 @@ export const courses: Course[] = [
     shortDescription:
       "Build end-to-end web applications with Python, Django or Flask, REST APIs and React.",
     level: "Intermediate",
+    careerOpportunities: ["Python Full Stack Developer", "Django Developer"],
+    averagePackage: "₹4–7 LPA",
     overview: [
       "This course covers full stack web development with Python on the backend and a modern JavaScript frontend, ending in a complete deployable application.",
       "You work through data modelling, API design, UI implementation and deployment so you understand how a real product fits together.",
