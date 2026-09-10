@@ -204,7 +204,7 @@ export const programs: Program[] = [
     ],
     benefits: [
       {
-        title: "Industry-partner experience",
+        title: "Industry-Client Experience",
         description: "Build from real organizational requirements in a professional project environment.",
       },
       {
