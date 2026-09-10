@@ -10,18 +10,41 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CoursesIndexRouteImport } from './routes/courses.index'
+import { Route as CoursesSlugRouteImport } from './routes/courses.$slug'
 import { Route as ProgramsIndexRouteImport } from './routes/programs.index'
 import { Route as ProgramsSlugRouteImport } from './routes/programs.$slug'
+import { Route as ResourcesIndexRouteImport } from './routes/resources.index'
+import { Route as ResourcesCareerPathsRouteImport } from './routes/resources.career-paths'
+import { Route as ResourcesInterviewQuestionsRouteImport } from './routes/resources.interview-questions'
+import { Route as ResourcesProjectIdeasRouteImport } from './routes/resources.project-ideas'
+import { Route as ResourcesSyllabusesRouteImport } from './routes/resources.syllabuses'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CoursesIndexRoute = CoursesIndexRouteImport.update({
   id: '/courses/',
   path: '/courses/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoursesSlugRoute = CoursesSlugRouteImport.update({
+  id: '/courses/$slug',
+  path: '/courses/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProgramsIndexRoute = ProgramsIndexRouteImport.update({
@@ -34,39 +57,134 @@ const ProgramsSlugRoute = ProgramsSlugRouteImport.update({
   path: '/programs/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ResourcesIndexRoute = ResourcesIndexRouteImport.update({
+  id: '/resources/',
+  path: '/resources/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResourcesCareerPathsRoute = ResourcesCareerPathsRouteImport.update({
+  id: '/resources/career-paths',
+  path: '/resources/career-paths',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResourcesInterviewQuestionsRoute =
+  ResourcesInterviewQuestionsRouteImport.update({
+    id: '/resources/interview-questions',
+    path: '/resources/interview-questions',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ResourcesProjectIdeasRoute = ResourcesProjectIdeasRouteImport.update({
+  id: '/resources/project-ideas',
+  path: '/resources/project-ideas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResourcesSyllabusesRoute = ResourcesSyllabusesRouteImport.update({
+  id: '/resources/syllabuses',
+  path: '/resources/syllabuses',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/courses/$slug': typeof CoursesSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/resources/career-paths': typeof ResourcesCareerPathsRoute
+  '/resources/interview-questions': typeof ResourcesInterviewQuestionsRoute
+  '/resources/project-ideas': typeof ResourcesProjectIdeasRoute
+  '/resources/syllabuses': typeof ResourcesSyllabusesRoute
   '/courses/': typeof CoursesIndexRoute
   '/programs/': typeof ProgramsIndexRoute
+  '/resources/': typeof ResourcesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/courses/$slug': typeof CoursesSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/resources/career-paths': typeof ResourcesCareerPathsRoute
+  '/resources/interview-questions': typeof ResourcesInterviewQuestionsRoute
+  '/resources/project-ideas': typeof ResourcesProjectIdeasRoute
+  '/resources/syllabuses': typeof ResourcesSyllabusesRoute
   '/courses': typeof CoursesIndexRoute
   '/programs': typeof ProgramsIndexRoute
+  '/resources': typeof ResourcesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/courses/$slug': typeof CoursesSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/resources/career-paths': typeof ResourcesCareerPathsRoute
+  '/resources/interview-questions': typeof ResourcesInterviewQuestionsRoute
+  '/resources/project-ideas': typeof ResourcesProjectIdeasRoute
+  '/resources/syllabuses': typeof ResourcesSyllabusesRoute
   '/courses/': typeof CoursesIndexRoute
   '/programs/': typeof ProgramsIndexRoute
+  '/resources/': typeof ResourcesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/programs/$slug' | '/courses/' | '/programs/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/courses/$slug'
+    | '/programs/$slug'
+    | '/resources/career-paths'
+    | '/resources/interview-questions'
+    | '/resources/project-ideas'
+    | '/resources/syllabuses'
+    | '/courses/'
+    | '/programs/'
+    | '/resources/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/programs/$slug' | '/courses' | '/programs'
-  id: '__root__' | '/' | '/programs/$slug' | '/courses/' | '/programs/'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/courses/$slug'
+    | '/programs/$slug'
+    | '/resources/career-paths'
+    | '/resources/interview-questions'
+    | '/resources/project-ideas'
+    | '/resources/syllabuses'
+    | '/courses'
+    | '/programs'
+    | '/resources'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/courses/$slug'
+    | '/programs/$slug'
+    | '/resources/career-paths'
+    | '/resources/interview-questions'
+    | '/resources/project-ideas'
+    | '/resources/syllabuses'
+    | '/courses/'
+    | '/programs/'
+    | '/resources/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  CoursesSlugRoute: typeof CoursesSlugRoute
   ProgramsSlugRoute: typeof ProgramsSlugRoute
+  ResourcesCareerPathsRoute: typeof ResourcesCareerPathsRoute
+  ResourcesInterviewQuestionsRoute: typeof ResourcesInterviewQuestionsRoute
+  ResourcesProjectIdeasRoute: typeof ResourcesProjectIdeasRoute
+  ResourcesSyllabusesRoute: typeof ResourcesSyllabusesRoute
   CoursesIndexRoute: typeof CoursesIndexRoute
   ProgramsIndexRoute: typeof ProgramsIndexRoute
+  ResourcesIndexRoute: typeof ResourcesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -78,11 +196,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/courses/': {
       id: '/courses/'
       path: '/courses'
       fullPath: '/courses/'
       preLoaderRoute: typeof CoursesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/courses/$slug': {
+      id: '/courses/$slug'
+      path: '/courses/$slug'
+      fullPath: '/courses/$slug'
+      preLoaderRoute: typeof CoursesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/programs/': {
@@ -99,14 +238,57 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProgramsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/resources/': {
+      id: '/resources/'
+      path: '/resources'
+      fullPath: '/resources/'
+      preLoaderRoute: typeof ResourcesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resources/career-paths': {
+      id: '/resources/career-paths'
+      path: '/resources/career-paths'
+      fullPath: '/resources/career-paths'
+      preLoaderRoute: typeof ResourcesCareerPathsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resources/interview-questions': {
+      id: '/resources/interview-questions'
+      path: '/resources/interview-questions'
+      fullPath: '/resources/interview-questions'
+      preLoaderRoute: typeof ResourcesInterviewQuestionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resources/project-ideas': {
+      id: '/resources/project-ideas'
+      path: '/resources/project-ideas'
+      fullPath: '/resources/project-ideas'
+      preLoaderRoute: typeof ResourcesProjectIdeasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resources/syllabuses': {
+      id: '/resources/syllabuses'
+      path: '/resources/syllabuses'
+      fullPath: '/resources/syllabuses'
+      preLoaderRoute: typeof ResourcesSyllabusesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  CoursesSlugRoute: CoursesSlugRoute,
   ProgramsSlugRoute: ProgramsSlugRoute,
+  ResourcesCareerPathsRoute: ResourcesCareerPathsRoute,
+  ResourcesInterviewQuestionsRoute: ResourcesInterviewQuestionsRoute,
+  ResourcesProjectIdeasRoute: ResourcesProjectIdeasRoute,
+  ResourcesSyllabusesRoute: ResourcesSyllabusesRoute,
   CoursesIndexRoute: CoursesIndexRoute,
   ProgramsIndexRoute: ProgramsIndexRoute,
+  ResourcesIndexRoute: ResourcesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
