@@ -17,6 +17,8 @@ import { Route as CoursesSlugRouteImport } from './routes/courses.$slug'
 import { Route as ProgramsIndexRouteImport } from './routes/programs.index'
 import { Route as ProgramsSlugRouteImport } from './routes/programs.$slug'
 import { Route as ResourcesIndexRouteImport } from './routes/resources.index'
+import { Route as ResourcesCareerPathsRouteImport } from './routes/resources.career-paths'
+import { Route as ResourcesInterviewQuestionsRouteImport } from './routes/resources.interview-questions'
 import { Route as ResourcesProjectIdeasRouteImport } from './routes/resources.project-ideas'
 import { Route as ResourcesSyllabusesRouteImport } from './routes/resources.syllabuses'
 
@@ -60,6 +62,17 @@ const ResourcesIndexRoute = ResourcesIndexRouteImport.update({
   path: '/resources/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ResourcesCareerPathsRoute = ResourcesCareerPathsRouteImport.update({
+  id: '/resources/career-paths',
+  path: '/resources/career-paths',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResourcesInterviewQuestionsRoute =
+  ResourcesInterviewQuestionsRouteImport.update({
+    id: '/resources/interview-questions',
+    path: '/resources/interview-questions',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ResourcesProjectIdeasRoute = ResourcesProjectIdeasRouteImport.update({
   id: '/resources/project-ideas',
   path: '/resources/project-ideas',
@@ -77,6 +90,8 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/courses/$slug': typeof CoursesSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/resources/career-paths': typeof ResourcesCareerPathsRoute
+  '/resources/interview-questions': typeof ResourcesInterviewQuestionsRoute
   '/resources/project-ideas': typeof ResourcesProjectIdeasRoute
   '/resources/syllabuses': typeof ResourcesSyllabusesRoute
   '/courses/': typeof CoursesIndexRoute
@@ -89,6 +104,8 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/courses/$slug': typeof CoursesSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/resources/career-paths': typeof ResourcesCareerPathsRoute
+  '/resources/interview-questions': typeof ResourcesInterviewQuestionsRoute
   '/resources/project-ideas': typeof ResourcesProjectIdeasRoute
   '/resources/syllabuses': typeof ResourcesSyllabusesRoute
   '/courses': typeof CoursesIndexRoute
@@ -102,6 +119,8 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/courses/$slug': typeof CoursesSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/resources/career-paths': typeof ResourcesCareerPathsRoute
+  '/resources/interview-questions': typeof ResourcesInterviewQuestionsRoute
   '/resources/project-ideas': typeof ResourcesProjectIdeasRoute
   '/resources/syllabuses': typeof ResourcesSyllabusesRoute
   '/courses/': typeof CoursesIndexRoute
@@ -116,6 +135,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/courses/$slug'
     | '/programs/$slug'
+    | '/resources/career-paths'
+    | '/resources/interview-questions'
     | '/resources/project-ideas'
     | '/resources/syllabuses'
     | '/courses/'
@@ -128,6 +149,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/courses/$slug'
     | '/programs/$slug'
+    | '/resources/career-paths'
+    | '/resources/interview-questions'
     | '/resources/project-ideas'
     | '/resources/syllabuses'
     | '/courses'
@@ -140,6 +163,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/courses/$slug'
     | '/programs/$slug'
+    | '/resources/career-paths'
+    | '/resources/interview-questions'
     | '/resources/project-ideas'
     | '/resources/syllabuses'
     | '/courses/'
@@ -153,6 +178,8 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   CoursesSlugRoute: typeof CoursesSlugRoute
   ProgramsSlugRoute: typeof ProgramsSlugRoute
+  ResourcesCareerPathsRoute: typeof ResourcesCareerPathsRoute
+  ResourcesInterviewQuestionsRoute: typeof ResourcesInterviewQuestionsRoute
   ResourcesProjectIdeasRoute: typeof ResourcesProjectIdeasRoute
   ResourcesSyllabusesRoute: typeof ResourcesSyllabusesRoute
   CoursesIndexRoute: typeof CoursesIndexRoute
@@ -218,6 +245,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ResourcesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/resources/career-paths': {
+      id: '/resources/career-paths'
+      path: '/resources/career-paths'
+      fullPath: '/resources/career-paths'
+      preLoaderRoute: typeof ResourcesCareerPathsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resources/interview-questions': {
+      id: '/resources/interview-questions'
+      path: '/resources/interview-questions'
+      fullPath: '/resources/interview-questions'
+      preLoaderRoute: typeof ResourcesInterviewQuestionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/resources/project-ideas': {
       id: '/resources/project-ideas'
       path: '/resources/project-ideas'
@@ -241,6 +282,8 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   CoursesSlugRoute: CoursesSlugRoute,
   ProgramsSlugRoute: ProgramsSlugRoute,
+  ResourcesCareerPathsRoute: ResourcesCareerPathsRoute,
+  ResourcesInterviewQuestionsRoute: ResourcesInterviewQuestionsRoute,
   ResourcesProjectIdeasRoute: ResourcesProjectIdeasRoute,
   ResourcesSyllabusesRoute: ResourcesSyllabusesRoute,
   CoursesIndexRoute: CoursesIndexRoute,
