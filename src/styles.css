@@ -195,6 +195,24 @@
   }
 }
 
+@keyframes client-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-client-marquee {
+  animation: client-marquee 18s linear infinite;
+  will-change: transform;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
 @utility bg-gradient-brand {
   background-image: var(--gradient-brand);
 }
