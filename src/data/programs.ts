@@ -187,7 +187,7 @@ export const programs: Program[] = [
     overview: [
       "Zortex Externship is designed for students and recent graduates who know the fundamentals but still need the credible experience employers expect.",
       "Through an Industry-Partner Project, you build with an external organization from real requirements—not a copied tutorial. You work through planning, implementation, reviews and delivery with mentor support.",
-      "Alongside the project, you strengthen your resume, portfolio, communication and interview performance. You leave prepared to apply with evidence of what you can do, not just a certificate.",
+      "Alongside the project, industry experts guide your work, experienced HR professionals help you practise interviews, and placement assistance supports your job search. You leave prepared to apply with evidence of what you can do, not just a certificate.",
     ],
     icon: Rocket,
     highlights: [
@@ -200,6 +200,10 @@ export const programs: Program[] = [
         title: "Job-Readiness Guidance",
         description:
           "Turn your work into a stronger resume, credible portfolio story and confident interview answers for the roles you want.",
+      },
+      {
+        title: "Placement Assistance",
+        description: "Get guidance on relevant opportunities and applications as you put your project experience to work.",
       },
     ],
     benefits: [
@@ -226,6 +230,10 @@ export const programs: Program[] = [
       {
         title: "Career direction",
         description: "Clarity on which roles fit your skills and how to target them.",
+      },
+      {
+        title: "Placement assistance",
+        description: "Support with opportunity discovery, applications and next steps in your job search.",
       },
     ],
     approach: [

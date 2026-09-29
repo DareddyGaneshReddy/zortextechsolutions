@@ -36,7 +36,7 @@ function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="We turn academic knowledge into employable ability"
-        description={`${siteConfig.name} helps students and recent graduates build the skills, experience and confidence to compete for technical roles.`}
+        description={`${siteConfig.name} brings together technical training, industry-client projects, expert guidance, HR preparation and placement assistance to help students compete for technical roles.`}
         crumbs={[{ label: "About" }]}
       />
 
@@ -64,6 +64,10 @@ function AboutPage() {
                 <p>
                   Our mentors work alongside students rather than lecturing at them, reviewing code,
                   correcting habits early and pointing out how each concept shows up in real work.
+                </p>
+                <p>
+                  Experienced HR professionals help students prepare for interviews, while placement
+                  assistance helps them identify opportunities and navigate the application process.
                 </p>
               </div>
             </div>

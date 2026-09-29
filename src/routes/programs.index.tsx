@@ -36,8 +36,8 @@ function ProgramsPage() {
     <>
       <PageHero
         eyebrow="Programs"
-        title="A complete path from learning to employability"
-        description="Build strong foundations through Edge or Elite, then turn your knowledge into credible workplace experience through Zortex Externship."
+        title="Your path from learning to the job market"
+        description="Train with expert guidance, build client-shaped projects in Zortex Externship, prepare with experienced HR professionals, and get placement assistance as you apply."
         crumbs={[{ label: "Programs" }]}
       />
 
@@ -64,7 +64,7 @@ function ProgramsPage() {
               "Mentor guidance and code review",
               "Portfolio work you can explain in interviews",
               "Career direction for your chosen course",
-              "Access to Zortex learning resources",
+              "HR interview practice and placement assistance",
             ].map((item) => (
               <div
                 key={item}

@@ -37,7 +37,7 @@ function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Talk to the Zortex team"
-        description="Ask about programmes, courses, the externship or anything else — we'll get back to you quickly."
+        description="Ask about training, externship projects, HR interview preparation or placement assistance. Let's talk about your next career step."
         crumbs={[{ label: "Contact" }]}
       />
 
