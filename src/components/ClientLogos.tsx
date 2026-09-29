@@ -40,7 +40,7 @@ export function ClientLogos() {
       {clients.map((client) => (
         <li
           key={`${client.name}-${duplicate ? "duplicate" : "original"}`}
-          className="flex min-h-36 w-64 shrink-0 flex-col items-center justify-center gap-4 border-r border-border bg-card px-6 py-5 sm:w-72"
+          className="flex min-h-40 w-64 shrink-0 flex-col items-center justify-center gap-4 border-r border-border bg-card px-6 py-5 sm:w-72"
         >
           {client.logo ? (
             <img
@@ -68,7 +68,7 @@ export function ClientLogos() {
   );
 
   return (
-    <section aria-labelledby="client-logos-title" className="border-b border-border bg-background py-12 sm:py-14">
+    <section aria-labelledby="client-logos-title" className="border-b border-border bg-accent-soft py-12 sm:py-14">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-14">
           <div className="shrink-0 text-center lg:w-52 lg:text-left">
@@ -78,7 +78,7 @@ export function ClientLogos() {
             </h2>
           </div>
 
-          <div className="group flex-1 overflow-hidden rounded-lg border border-border bg-border">
+          <div className="group flex-1 overflow-hidden border border-border bg-border">
             <div className="animate-client-marquee flex w-max group-hover:[animation-play-state:paused]">
               {renderClients()}
               {renderClients(true)}

@@ -145,7 +145,7 @@ function ProgramDetailPage() {
       </section>
 
       {/* Benefits */}
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-primary-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader eyebrow="Key benefits" title={`Why students choose ${program.name}`} />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

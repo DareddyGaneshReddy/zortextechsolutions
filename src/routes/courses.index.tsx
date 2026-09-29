@@ -56,12 +56,12 @@ function CoursesPage() {
     <>
       <PageHero
         eyebrow="Courses"
-        title="Learn the skills you need to compete for technical roles"
-        description="Five focused courses that take you from fundamentals to practical builds, portfolio proof and a clear career direction."
+        title="Learn skills that move you toward a real role"
+        description="Five focused courses connect fundamentals to practical builds, portfolio proof, expert guidance and a clear direction for your job search."
         crumbs={[{ label: "Courses" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {courses.map((course) => (

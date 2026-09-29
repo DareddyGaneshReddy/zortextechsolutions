@@ -46,7 +46,7 @@ function CareerPathsPage() {
         crumbs={[{ label: "Resources", to: "/resources" }, { label: "Career Paths" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-primary-soft section-y">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6">
           <CourseTabs value={selected} onChange={setSelected} />
 

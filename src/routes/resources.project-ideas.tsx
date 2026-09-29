@@ -64,7 +64,7 @@ function ProjectIdeasPage() {
         crumbs={[{ label: "Resources", to: "/resources" }, { label: "Project Ideas" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="space-y-8">
             <CourseTabs value={selected} onChange={setSelected} />

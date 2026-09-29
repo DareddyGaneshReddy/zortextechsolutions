@@ -147,7 +147,7 @@ function CourseDetailPage() {
       </section>
 
       {/* Outcomes */}
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-primary-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="What you will learn"
@@ -207,7 +207,7 @@ function CourseDetailPage() {
       </section>
 
       {/* Projects */}
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Projects"

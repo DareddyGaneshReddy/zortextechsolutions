@@ -67,12 +67,12 @@ function ResourcesPage() {
     <>
       <PageHero
         eyebrow="Resources"
-        title="Everything you need to study, build and prepare"
+        title="Tools for every step toward your first role"
         description="Open resources for Zortex students and anyone learning to code — syllabuses, project ideas, career paths and interview preparation."
         crumbs={[{ label: "Resources" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-6 sm:grid-cols-2">
             {resources.map((resource) => {
@@ -108,7 +108,7 @@ function ResourcesPage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-primary-soft section-y">
         <div className="container mx-auto max-w-4xl px-4 text-center sm:px-6">
           <SectionHeader
             eyebrow="How to use these"

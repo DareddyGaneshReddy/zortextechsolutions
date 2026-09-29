@@ -61,7 +61,7 @@ function InterviewQuestionsPage() {
         crumbs={[{ label: "Resources", to: "/resources" }, { label: "Interview Questions" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-primary-soft section-y">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6">
           <div className="relative">
             <Search

@@ -67,7 +67,7 @@ function SyllabusesPage() {
         crumbs={[{ label: "Resources", to: "/resources" }, { label: "Syllabuses" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6">
           <CourseTabs value={selected} onChange={setSelected} />
 

@@ -40,7 +40,7 @@ function AboutPage() {
         crumbs={[{ label: "About" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr]">
             <div className="min-w-0">
@@ -143,7 +143,7 @@ function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-primary-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Our team"

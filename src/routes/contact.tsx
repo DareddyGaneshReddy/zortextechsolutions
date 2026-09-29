@@ -41,7 +41,7 @@ function ContactPage() {
         crumbs={[{ label: "Contact" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-10 lg:grid-cols-[1fr_1.3fr]">
             <div className="min-w-0">
