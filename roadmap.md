@@ -10,5 +10,5 @@
 
 - [x] Restyle all pages in the selected Midnight prestige direction, without changing factual claims or content.
 - [x] Check the redesigned desktop and mobile pages.
-- [ ] Add a first-screen visual path for Java and Python Full Stack externship with placement assistance.
-- [ ] Add the second phone number beside the existing one and verify both changes on desktop and mobile.
+- [x] Add a first-screen visual path for Java and Python Full Stack externship with placement assistance.
+- [x] Add the second phone number beside the existing one and verify both changes on desktop and mobile.
