@@ -74,7 +74,7 @@ export function ClientLogos() {
           <div className="shrink-0 text-center lg:w-52 lg:text-left">
             <p className="text-xs font-bold uppercase tracking-wide text-primary">Real-world connections</p>
             <h2 id="client-logos-title" className="mt-2 text-xl font-bold text-foreground">
-              Organizations we&apos;ve worked with
+              Organizations we work with
             </h2>
           </div>
 
