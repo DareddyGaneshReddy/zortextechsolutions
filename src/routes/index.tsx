@@ -20,6 +20,8 @@ import {
 } from "lucide-react";
 
 import heroImage from "@/assets/zortex-career-hero.jpg";
+import javaLogo from "@/assets/course-logos/java.svg.asset.json";
+import pythonLogo from "@/assets/course-logos/python.svg.asset.json";
 import studentsCollaborating from "@/assets/students-collaborating.jpg";
 import studentsHrInterview from "@/assets/students-hr-interview.jpg";
 import studentsMentoring from "@/assets/students-mentoring.jpg";
@@ -154,6 +156,28 @@ function HomePage() {
             <h1 className="mt-6 text-balance text-4xl font-extrabold leading-[1.1] text-brand-foreground sm:text-6xl lg:text-7xl">
               Zortex Solutions.<br /><span className="text-gradient-brand">Your career, accelerated.</span>
             </h1>
+            <div aria-label="Java and Python Full Stack development leads to externship and placement assistance" className="mt-7 border-y border-brand-foreground/25 bg-brand/70 py-4 backdrop-blur-md xl:absolute xl:right-6 xl:top-1/2 xl:mt-0 xl:w-72 xl:-translate-y-1/2 xl:border-y-0 xl:border-l xl:bg-brand/85 xl:px-5 xl:py-6">
+              <p className="mb-4 text-xs font-bold uppercase tracking-wide text-primary">The Zortex pathway</p>
+              <ol className="grid grid-cols-3 gap-2 xl:grid-cols-1 xl:gap-0">
+                <li className="relative min-w-0 xl:pb-6">
+                  <div className="flex h-12 items-center gap-1.5">
+                    <img src={javaLogo.url} alt="Java" width={32} height={32} className="size-8 rounded-sm bg-brand-foreground p-1 object-contain" />
+                    <img src={pythonLogo.url} alt="Python" width={32} height={32} className="size-8 rounded-sm bg-brand-foreground p-1 object-contain" />
+                  </div>
+                  <span className="mt-2 block text-xs font-semibold leading-snug text-brand-foreground sm:text-sm">Java &amp; Python<br />Full Stack</span>
+                  <ArrowRight aria-hidden="true" className="absolute right-0 top-4 size-4 text-primary xl:right-auto xl:top-auto xl:bottom-1 xl:left-5 xl:rotate-90" />
+                </li>
+                <li className="relative min-w-0 xl:pb-6">
+                  <span aria-hidden="true" className="grid size-12 place-items-center rounded-sm border border-primary/40 bg-primary-soft text-primary"><FolderKanban className="size-6" /></span>
+                  <span className="mt-2 block text-xs font-semibold leading-snug text-brand-foreground sm:text-sm">Real-project<br />Externship</span>
+                  <ArrowRight aria-hidden="true" className="absolute right-0 top-4 size-4 text-primary xl:right-auto xl:top-auto xl:bottom-1 xl:left-5 xl:rotate-90" />
+                </li>
+                <li className="min-w-0">
+                  <span aria-hidden="true" className="grid size-12 place-items-center rounded-sm border border-primary/40 bg-primary-soft text-primary"><Briefcase className="size-6" /></span>
+                  <span className="mt-2 block text-xs font-semibold leading-snug text-brand-foreground sm:text-sm">Placement<br />Assistance</span>
+                </li>
+              </ol>
+            </div>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/80 sm:text-xl">
               From your first line of code to real industry-client projects, HR interviews and placement assistance—build the proof and confidence to pursue your first job.
             </p>

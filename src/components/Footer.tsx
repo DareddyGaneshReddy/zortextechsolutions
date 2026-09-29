@@ -95,6 +95,12 @@ export function Footer() {
               </a>
             </li>
             <li>
+              <a href={siteConfig.contact.additionalPhoneHref} className={`${linkClass} flex items-start gap-2`}>
+                <Phone aria-hidden="true" className="mt-0.5 size-3.5 shrink-0" />
+                {siteConfig.contact.additionalPhone}
+              </a>
+            </li>
+            <li>
               <a href={siteConfig.contact.emailHref} className={`${linkClass} flex items-start gap-2`}>
                 <Mail aria-hidden="true" className="mt-0.5 size-3.5 shrink-0" />
                 <span className="break-all">{siteConfig.contact.email}</span>

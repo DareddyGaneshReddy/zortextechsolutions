@@ -70,6 +70,12 @@ function ContactPage() {
                     >
                       {siteConfig.contact.phone}
                     </a>
+                    <a
+                      href={siteConfig.contact.additionalPhoneHref}
+                      className="mt-1 block text-sm text-muted-foreground transition-colors hover:text-primary"
+                    >
+                      {siteConfig.contact.additionalPhone}
+                    </a>
                   </span>
                 </li>
 

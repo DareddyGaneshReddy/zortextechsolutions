@@ -112,7 +112,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           name: siteConfig.name,
           description: siteConfig.description,
           email: siteConfig.contact.email,
-          telephone: siteConfig.contact.phone,
+          telephone: [siteConfig.contact.phone, siteConfig.contact.additionalPhone],
         }),
       },
     ],
