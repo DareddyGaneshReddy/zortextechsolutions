@@ -14,6 +14,8 @@ export const siteConfig = {
   contact: {
     phone: "+91 91777 32225",
     phoneHref: "tel:+919177732225",
+    additionalPhone: "+91 90303 58888",
+    additionalPhoneHref: "tel:+919030358888",
     email: "extern.partner@zortexsolutions.com",
     emailHref: "mailto:extern.partner@zortexsolutions.com",
     addressLines: [
