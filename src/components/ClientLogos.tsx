@@ -68,7 +68,7 @@ export function ClientLogos() {
   );
 
   return (
-    <section aria-labelledby="client-logos-title" className="border-b border-border bg-accent-soft py-12 sm:py-14">
+    <section aria-labelledby="client-logos-title" className="border-b border-border bg-background py-12 sm:py-14">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-14">
           <div className="shrink-0 text-center lg:w-52 lg:text-left">

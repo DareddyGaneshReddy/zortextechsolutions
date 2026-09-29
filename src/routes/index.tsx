@@ -142,19 +142,19 @@ const hrTrainingTopics = [
 function HomePage() {
   return (
     <>
-      <section className="relative flex min-h-[min(720px,78svh)] items-center overflow-hidden bg-brand text-brand-foreground sm:min-h-[min(760px,78svh)]">
+      <section className="relative flex min-h-[min(690px,76svh)] items-center overflow-hidden border-b border-border bg-brand text-brand-foreground sm:min-h-[min(730px,76svh)]">
         <img src={heroImage} alt="Students and a mentor discussing a software project together" width={1600} height={1008} fetchPriority="high" className="absolute inset-0 size-full object-cover object-[60%_center]" />
         <div aria-hidden="true" className="absolute inset-0 career-hero-overlay" />
         <div className="container relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 border border-brand-foreground/35 px-3 py-1.5 text-xs font-bold uppercase text-brand-foreground">
-              <Sparkles aria-hidden="true" className="size-4 text-secondary" />
+            <span className="inline-flex items-center gap-2 rounded-md border border-primary/35 bg-primary-soft/70 px-3 py-1.5 text-xs font-semibold uppercase text-primary">
+              <Sparkles aria-hidden="true" className="size-4 text-primary" />
               Your career begins here
             </span>
-            <h1 className="mt-6 text-balance text-4xl leading-[1.08] text-brand-foreground sm:text-6xl lg:text-7xl">
-              Zortex Solutions.<br /><span className="text-secondary">Your career, accelerated.</span>
+            <h1 className="mt-6 text-balance text-4xl font-extrabold leading-[1.1] text-brand-foreground sm:text-6xl lg:text-7xl">
+              Zortex Solutions.<br /><span className="text-gradient-brand">Your career, accelerated.</span>
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/90 sm:text-xl">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/80 sm:text-xl">
               From your first line of code to real industry-client projects, HR interviews and placement assistance—build the proof and confidence to pursue your first job.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -167,19 +167,19 @@ function HomePage() {
             </div>
             <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-brand-foreground">
               {["Real projects", "Expert guidance", "HR training", "Placement assistance"].map((item) => (
-                <li key={item} className="flex items-center gap-2"><BadgeCheck aria-hidden="true" className="size-4 text-secondary" />{item}</li>
+                <li key={item} className="flex items-center gap-2"><BadgeCheck aria-hidden="true" className="size-4 text-primary" />{item}</li>
               ))}
             </ul>
           </div>
         </div>
       </section>
 
-      <section aria-label="Your path to a job" className="bg-secondary py-8 text-secondary-foreground sm:py-10">
+      <section aria-label="Your path to a job" className="border-b border-border bg-brand py-8 text-brand-foreground sm:py-10">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="flex items-center gap-3 text-sm font-bold uppercase"><RouteIcon aria-hidden="true" className="size-5" /> The Zortex career runway</div>
+          <div className="flex items-center gap-3 text-sm font-bold uppercase text-primary"><RouteIcon aria-hidden="true" className="size-5" /> The Zortex career runway</div>
           <ol className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[["01", "Learn the skills"], ["02", "Build with clients"], ["03", "Prepare with HR"], ["04", "Pursue the role"]].map(([number, label]) => (
-              <li key={number} className="flex items-center gap-3 border-t border-secondary-foreground/30 pt-3"><span className="font-display text-xl">{number}</span><span className="font-semibold">{label}</span></li>
+              <li key={number} className="flex items-center gap-3 border-t border-border pt-3"><span className="font-display text-xl text-primary">{number}</span><span className="font-semibold">{label}</span></li>
             ))}
           </ol>
         </div>
@@ -312,7 +312,7 @@ function HomePage() {
       </section>
 
       {/* HR Training */}
-       <section className="border-y border-border bg-secondary/40 section-y">
+       <section className="border-y border-border bg-surface section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <div>
@@ -352,7 +352,7 @@ function HomePage() {
                   >
                     <span
                       aria-hidden="true"
-                      className="grid size-11 shrink-0 place-items-center rounded-xl bg-accent-soft text-brand"
+                      className="grid size-11 shrink-0 place-items-center rounded-xl bg-accent-soft text-primary"
                     >
                       <Icon className="size-5" />
                     </span>
@@ -502,7 +502,7 @@ function ResourceLink({
     >
       <span
         aria-hidden="true"
-        className="grid size-11 place-items-center rounded-xl bg-accent-soft text-brand"
+        className="grid size-11 place-items-center rounded-xl bg-accent-soft text-primary"
       >
         <Icon className="size-5" />
       </span>
