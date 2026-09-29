@@ -24,6 +24,8 @@ export const Route = createFileRoute("/resources/syllabuses")({
         content: "See exactly what each Zortex course covers, module by module.",
       },
       { property: "og:url", content: "/resources/syllabuses" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/resources/syllabuses" }],
   }),

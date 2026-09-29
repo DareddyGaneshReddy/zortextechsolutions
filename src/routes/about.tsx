@@ -24,6 +24,8 @@ export const Route = createFileRoute("/about")({
           "Our mission, vision and the team behind Zortex Solutions' practical, career-oriented technical training.",
       },
       { property: "og:url", content: "/about" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),

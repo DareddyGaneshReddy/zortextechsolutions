@@ -26,6 +26,8 @@ export const Route = createFileRoute("/resources/project-ideas")({
         content: "Browse beginner to advanced project ideas across all Zortex courses.",
       },
       { property: "og:url", content: "/resources/project-ideas" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/resources/project-ideas" }],
   }),

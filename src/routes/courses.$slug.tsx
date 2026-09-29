@@ -37,6 +37,7 @@ export const Route = createFileRoute("/courses/$slug")({
         { property: "og:description", content: loaderData.description },
         { property: "og:type", content: "article" },
         { property: "og:url", content: `/courses/${loaderData.slug}` },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: `/courses/${loaderData.slug}` }],
       scripts: [

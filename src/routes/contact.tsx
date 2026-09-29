@@ -25,6 +25,8 @@ export const Route = createFileRoute("/contact")({
           "Phone, email and enquiry form for Zortex Solutions training programmes, courses and externship.",
       },
       { property: "og:url", content: "/contact" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
   }),

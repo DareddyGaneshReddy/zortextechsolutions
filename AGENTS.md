@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the Zortex visual language in semantic tokens in `src/styles.css` and reuse it across routes, so the jobs-first design remains consistent.
+- Keep the external-client logo lineup in `src/components/ClientLogos.tsx` with asset pointers, so imagery remains locally managed and the marquee stays accessible.

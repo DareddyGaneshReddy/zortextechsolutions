@@ -25,6 +25,8 @@ export const Route = createFileRoute("/programs/")({
           "Offline training, online training and an externship built around industry-partner projects—choose the path that moves you toward a technical role.",
       },
       { property: "og:url", content: "/programs" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/programs" }],
   }),
@@ -41,7 +43,7 @@ function ProgramsPage() {
         crumbs={[{ label: "Programs" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-6 lg:grid-cols-3">
             {programs.map((program) => (
@@ -51,7 +53,7 @@ function ProgramsPage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-primary-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="What every programme includes"

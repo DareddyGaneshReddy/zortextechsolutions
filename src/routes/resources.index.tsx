@@ -21,6 +21,8 @@ export const Route = createFileRoute("/resources/")({
           "Syllabuses, project ideas, career paths and interview questions to support your learning.",
       },
       { property: "og:url", content: "/resources" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/resources" }],
   }),

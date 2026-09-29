@@ -22,6 +22,8 @@ export const Route = createFileRoute("/courses/")({
           "Explore C, Java, Python, Java Full Stack and Python Full Stack courses with practical projects and career guidance.",
       },
       { property: "og:url", content: "/courses" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/courses" }],
   }),

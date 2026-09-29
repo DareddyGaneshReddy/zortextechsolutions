@@ -26,6 +26,8 @@ export const Route = createFileRoute("/resources/career-paths")({
         content: "Course to skills to roles — a clear view of where each Zortex course can lead.",
       },
       { property: "og:url", content: "/resources/career-paths" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/resources/career-paths" }],
   }),

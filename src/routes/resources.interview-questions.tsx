@@ -27,6 +27,8 @@ export const Route = createFileRoute("/resources/interview-questions")({
         content: "Search technical and HR interview questions with clear, concise answers.",
       },
       { property: "og:url", content: "/resources/interview-questions" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/resources/interview-questions" }],
   }),

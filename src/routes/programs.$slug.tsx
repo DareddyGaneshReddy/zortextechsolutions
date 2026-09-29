@@ -30,6 +30,7 @@ export const Route = createFileRoute("/programs/$slug")({
         { property: "og:description", content: loaderData.summary },
         { property: "og:type", content: "article" },
         { property: "og:url", content: `/programs/${loaderData.slug}` },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: `/programs/${loaderData.slug}` }],
     };
