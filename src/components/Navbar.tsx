@@ -36,7 +36,7 @@ export function Navbar() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-shadow duration-300",
-        scrolled ? "border-b border-border bg-background shadow-soft" : "border-b border-border bg-background",
+        scrolled ? "border-b border-border bg-background/90 backdrop-blur-xl shadow-soft" : "border-b border-border bg-background/90 backdrop-blur-xl",
       )}
     >
       <div className="container mx-auto max-w-6xl px-4 sm:px-6">

@@ -21,7 +21,7 @@ export function ProgramCard({ program }: { program: Program }) {
       ) : null}
       <span
         aria-hidden="true"
-        className={`grid size-12 place-items-center rounded-md ${isExternship ? "bg-primary-soft text-primary" : "bg-primary-soft text-primary"}`}
+        className="grid size-12 place-items-center rounded-md bg-primary-soft text-primary"
       >
         <Icon className="size-6" />
       </span>
@@ -42,7 +42,7 @@ export function ProgramCard({ program }: { program: Program }) {
       <ul className="mt-5 flex-1 space-y-2.5">
         {program.benefits.slice(0, 3).map((benefit) => (
           <li key={benefit.title} className={`flex items-start gap-2 text-sm ${isExternship ? "text-brand-foreground" : "text-foreground"}`}>
-            <Check aria-hidden="true" className={`mt-0.5 size-4 shrink-0 ${isExternship ? "text-primary" : "text-primary"}`} />
+            <Check aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-primary" />
             {benefit.title}
           </li>
         ))}

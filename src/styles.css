@@ -143,6 +143,11 @@
     outline: 2px solid var(--color-ring);
     outline-offset: 2px;
   }
+
+  ::selection {
+    background-color: var(--color-primary-soft);
+    color: var(--color-foreground);
+  }
 }
 
 @utility career-hero-overlay {
