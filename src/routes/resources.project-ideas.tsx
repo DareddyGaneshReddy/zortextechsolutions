@@ -26,6 +26,8 @@ export const Route = createFileRoute("/resources/project-ideas")({
         content: "Browse beginner to advanced project ideas across all Zortex courses.",
       },
       { property: "og:url", content: "/resources/project-ideas" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/resources/project-ideas" }],
   }),
@@ -64,7 +66,7 @@ function ProjectIdeasPage() {
         crumbs={[{ label: "Resources", to: "/resources" }, { label: "Project Ideas" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="space-y-8">
             <CourseTabs value={selected} onChange={setSelected} />

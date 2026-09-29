@@ -7,7 +7,7 @@ import type { Course } from "@/data/courses";
 
 export function CourseCard({ course }: { course: Course }) {
   return (
-    <article className="card-hover flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-soft">
+    <article className="card-hover flex h-full flex-col rounded-md border border-border bg-card p-6 shadow-soft">
       <div className="flex items-start justify-between gap-3">
         <CourseLogo course={course} />
         <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">

@@ -26,7 +26,7 @@ const linkClass = "text-sm text-muted-foreground transition-colors hover:text-pr
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-surface">
+    <footer className="border-t border-border bg-primary-soft">
       <div className="container mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">

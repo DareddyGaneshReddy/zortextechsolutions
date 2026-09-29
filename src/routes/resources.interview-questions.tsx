@@ -27,6 +27,8 @@ export const Route = createFileRoute("/resources/interview-questions")({
         content: "Search technical and HR interview questions with clear, concise answers.",
       },
       { property: "og:url", content: "/resources/interview-questions" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/resources/interview-questions" }],
   }),
@@ -61,7 +63,7 @@ function InterviewQuestionsPage() {
         crumbs={[{ label: "Resources", to: "/resources" }, { label: "Interview Questions" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-primary-soft section-y">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6">
           <div className="relative">
             <Search

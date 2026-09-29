@@ -25,6 +25,8 @@ export const Route = createFileRoute("/contact")({
           "Phone, email and enquiry form for Zortex Solutions training programmes, courses and externship.",
       },
       { property: "og:url", content: "/contact" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
   }),
@@ -37,11 +39,11 @@ function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Talk to the Zortex team"
-        description="Ask about programmes, courses, the externship or anything else — we'll get back to you quickly."
+        description="Ask about training, externship projects, HR interview preparation or placement assistance. Let's talk about your next career step."
         crumbs={[{ label: "Contact" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-10 lg:grid-cols-[1fr_1.3fr]">
             <div className="min-w-0">

@@ -18,8 +18,8 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
 
-  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Archivo Black", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Hind", ui-sans-serif, system-ui, sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -62,42 +62,41 @@
 }
 
 :root {
-  --radius: 0.9rem;
+  --radius: 0.4rem;
 
-  --background: oklch(0.995 0.003 250);
-  --foreground: oklch(0.21 0.035 260);
-  --surface: oklch(0.975 0.008 255);
+  --background: oklch(0.97 0.015 250);
+  --foreground: oklch(0.25 0.065 255);
+  --surface: oklch(0.91 0.052 250);
 
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.21 0.035 260);
+  --card-foreground: oklch(0.25 0.065 255);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.21 0.035 260);
+  --popover-foreground: oklch(0.25 0.065 255);
 
-  /* Indigo primary */
-  --primary: oklch(0.5 0.19 272);
+  /* Electric campus: cobalt, coral, lime and deep ink */
+  --primary: oklch(0.55 0.205 260);
   --primary-foreground: oklch(0.99 0.005 260);
-  --primary-soft: oklch(0.95 0.03 272);
+  --primary-soft: oklch(0.91 0.055 255);
 
-  --secondary: oklch(0.96 0.012 262);
-  --secondary-foreground: oklch(0.28 0.04 265);
+  --secondary: oklch(0.88 0.13 130);
+  --secondary-foreground: oklch(0.22 0.06 255);
 
-  --muted: oklch(0.965 0.01 258);
-  --muted-foreground: oklch(0.53 0.03 262);
+  --muted: oklch(0.94 0.025 255);
+  --muted-foreground: oklch(0.43 0.045 255);
 
-  /* Teal accent, drawn from the logo mark */
-  --accent: oklch(0.55 0.09 205);
-  --accent-foreground: oklch(0.99 0.005 220);
-  --accent-soft: oklch(0.95 0.03 205);
+  --accent: oklch(0.69 0.19 30);
+  --accent-foreground: oklch(0.18 0.05 255);
+  --accent-soft: oklch(0.94 0.045 30);
 
-  --brand: oklch(0.42 0.07 210);
+  --brand: oklch(0.25 0.065 255);
   --brand-foreground: oklch(0.99 0.005 220);
 
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.99 0.003 250);
 
-  --border: oklch(0.915 0.012 258);
-  --input: oklch(0.915 0.012 258);
-  --ring: oklch(0.5 0.19 272);
+  --border: oklch(0.85 0.03 255);
+  --input: oklch(0.85 0.03 255);
+  --ring: oklch(0.55 0.205 260);
 
   --chart-1: oklch(0.5 0.19 272);
   --chart-2: oklch(0.55 0.09 205);
@@ -116,15 +115,13 @@
 
   --gradient-brand: linear-gradient(
     135deg,
-    oklch(0.5 0.19 272) 0%,
-    oklch(0.48 0.13 240) 50%,
-    oklch(0.5 0.09 205) 100%
+    oklch(0.55 0.205 260) 0%,
+    oklch(0.46 0.15 255) 100%
   );
   --gradient-soft: linear-gradient(
     160deg,
-    oklch(0.97 0.025 272) 0%,
-    oklch(0.985 0.012 240) 45%,
-    oklch(0.97 0.025 200) 100%
+    oklch(0.94 0.05 255) 0%,
+    oklch(0.94 0.045 30) 100%
   );
   --shadow-soft: 0 1px 2px oklch(0.4 0.05 265 / 0.04), 0 8px 24px -12px oklch(0.4 0.05 265 / 0.12);
   --shadow-lift: 0 2px 4px oklch(0.4 0.05 265 / 0.05), 0 20px 40px -20px oklch(0.4 0.05 265 / 0.2);
@@ -186,13 +183,18 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
+    font-weight: 400;
   }
 
   :focus-visible {
     outline: 2px solid var(--color-ring);
     outline-offset: 2px;
   }
+}
+
+@utility career-hero-overlay {
+  background: linear-gradient(90deg, oklch(0.17 0.06 255 / 0.96), oklch(0.20 0.07 255 / 0.8) 48%, oklch(0.20 0.07 255 / 0.26));
 }
 
 @keyframes client-marquee {

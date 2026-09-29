@@ -26,6 +26,8 @@ export const Route = createFileRoute("/resources/career-paths")({
         content: "Course to skills to roles — a clear view of where each Zortex course can lead.",
       },
       { property: "og:url", content: "/resources/career-paths" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/resources/career-paths" }],
   }),
@@ -46,7 +48,7 @@ function CareerPathsPage() {
         crumbs={[{ label: "Resources", to: "/resources" }, { label: "Career Paths" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-primary-soft section-y">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6">
           <CourseTabs value={selected} onChange={setSelected} />
 

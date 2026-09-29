@@ -36,7 +36,7 @@ export function Navbar() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-shadow duration-300",
-        scrolled ? "glass-panel shadow-soft" : "border-b border-transparent bg-background",
+        scrolled ? "border-b border-border bg-background shadow-soft" : "border-b border-border bg-background",
       )}
     >
       <div className="container mx-auto max-w-6xl px-4 sm:px-6">
@@ -64,20 +64,22 @@ export function Navbar() {
               </a>
             </Button>
 
-            <button
+            <Button
+              variant="outline"
+              size="icon"
               type="button"
               onClick={() => setOpen((value) => !value)}
               aria-expanded={open}
               aria-controls="mobile-nav"
               aria-label={open ? "Close menu" : "Open menu"}
-              className="ml-1 inline-flex size-10 items-center justify-center rounded-lg border border-border bg-card text-foreground transition-colors hover:bg-secondary lg:hidden"
+              className="ml-1 size-10 lg:hidden"
             >
               {open ? (
                 <X aria-hidden="true" className="size-5" />
               ) : (
                 <Menu aria-hidden="true" className="size-5" />
               )}
-            </button>
+            </Button>
           </div>
         </div>
       </div>

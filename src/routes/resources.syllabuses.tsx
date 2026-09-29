@@ -24,6 +24,8 @@ export const Route = createFileRoute("/resources/syllabuses")({
         content: "See exactly what each Zortex course covers, module by module.",
       },
       { property: "og:url", content: "/resources/syllabuses" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/resources/syllabuses" }],
   }),
@@ -67,7 +69,7 @@ function SyllabusesPage() {
         crumbs={[{ label: "Resources", to: "/resources" }, { label: "Syllabuses" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6">
           <CourseTabs value={selected} onChange={setSelected} />
 

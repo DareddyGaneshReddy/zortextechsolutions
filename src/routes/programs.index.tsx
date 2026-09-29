@@ -25,6 +25,8 @@ export const Route = createFileRoute("/programs/")({
           "Offline training, online training and an externship built around industry-partner projects—choose the path that moves you toward a technical role.",
       },
       { property: "og:url", content: "/programs" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/programs" }],
   }),
@@ -36,12 +38,12 @@ function ProgramsPage() {
     <>
       <PageHero
         eyebrow="Programs"
-        title="A complete path from learning to employability"
-        description="Build strong foundations through Edge or Elite, then turn your knowledge into credible workplace experience through Zortex Externship."
+        title="Your path from learning to the job market"
+        description="Train with expert guidance, build client-shaped projects in Zortex Externship, prepare with experienced HR professionals, and get placement assistance as you apply."
         crumbs={[{ label: "Programs" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-6 lg:grid-cols-3">
             {programs.map((program) => (
@@ -51,7 +53,7 @@ function ProgramsPage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-primary-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="What every programme includes"
@@ -64,7 +66,7 @@ function ProgramsPage() {
               "Mentor guidance and code review",
               "Portfolio work you can explain in interviews",
               "Career direction for your chosen course",
-              "Access to Zortex learning resources",
+              "HR interview practice and placement assistance",
             ].map((item) => (
               <div
                 key={item}

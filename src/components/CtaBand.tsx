@@ -18,9 +18,9 @@ export function CtaBand({
   primaryTo = "/programs",
 }: CtaBandProps) {
   return (
-    <section className="section-y">
+    <section className="bg-brand section-y">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-brand px-6 py-14 text-center shadow-glow sm:px-12">
+        <div className="relative overflow-hidden px-6 py-10 text-center sm:px-12">
           <div aria-hidden="true" className="absolute inset-0 grid-backdrop opacity-15" />
           <div className="relative">
             <h2 className="mx-auto max-w-2xl text-balance text-2xl font-bold text-primary-foreground sm:text-3xl">

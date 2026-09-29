@@ -11,6 +11,7 @@ import {
   Layers,
   MessageCircle,
   MessagesSquare,
+  Route as RouteIcon,
   Quote,
   Sparkles,
   Target,
@@ -18,7 +19,7 @@ import {
   Users,
 } from "lucide-react";
 
-import heroImage from "@/assets/hero-illustration.jpg";
+import heroImage from "@/assets/zortex-career-hero.jpg";
 import studentsCollaborating from "@/assets/students-collaborating.jpg";
 import studentsHrInterview from "@/assets/students-hr-interview.jpg";
 import studentsMentoring from "@/assets/students-mentoring.jpg";
@@ -55,6 +56,8 @@ export const Route = createFileRoute("/")({
           "Go from knowing the concepts to proving you can do the work. Build skills, project experience and interview confidence with Zortex.",
       },
       { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
@@ -94,9 +97,20 @@ const whyZortex = [
   },
   {
     icon: Briefcase,
-    title: "Industry-Partner Experience",
+    title: "Placement Assistance",
+    description:
+      "Get guidance on suitable opportunities, applications and next steps as you prepare to enter the job market.",
+  },
+  {
+    icon: Briefcase,
+    title: "Industry-Client Experience",
     description:
       "Build from an external organization’s requirements and experience professional reviews, feedback and delivery.",
+  },
+  {
+    icon: UserRoundCheck,
+    title: "Industry Expert Guidance",
+    description: "Learn from experienced professionals who connect your work to the expectations of a real team.",
   },
 ];
 
@@ -128,78 +142,46 @@ const hrTrainingTopics = [
 function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-soft">
-        <div aria-hidden="true" className="absolute inset-0 grid-backdrop opacity-40" />
-        <div className="container relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="min-w-0">
-              <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-card px-3 py-1.5 text-xs font-semibold text-primary shadow-soft">
-                <Sparkles aria-hidden="true" className="size-3.5" />
-                Your bridge from campus to career
-              </span>
-
-              <h1 className="mt-6 text-balance text-4xl font-bold leading-[1.08] text-foreground sm:text-5xl lg:text-6xl">
-                Don&apos;t just learn tech.{" "}
-                <span className="text-gradient-brand">Prove you can do the job.</span>
-              </h1>
-
-              <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Build the skills, real project experience, portfolio and interview confidence that
-                help students and recent graduates stand out for their first technical role.
-              </p>
-
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <Button asChild variant="hero" size="xl">
-                  <Link to="/programs">
-                    Start Your Career Path
-                    <ArrowRight aria-hidden="true" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outlineBrand" size="xl">
-                  <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
-                    <MessageCircle aria-hidden="true" />
-                    Talk to Us
-                  </a>
-                </Button>
-              </div>
-
-              <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-3">
-                {["Job-relevant skills", "Industry-partner projects", "Interview preparation"].map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-2 text-sm font-medium text-foreground"
-                  >
-                    <BadgeCheck aria-hidden="true" className="size-4 text-accent" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+      <section className="relative flex min-h-[min(720px,78svh)] items-center overflow-hidden bg-brand text-brand-foreground sm:min-h-[min(760px,78svh)]">
+        <img src={heroImage} alt="Students and a mentor discussing a software project together" width={1600} height={1008} fetchPriority="high" className="absolute inset-0 size-full object-cover object-[60%_center]" />
+        <div aria-hidden="true" className="absolute inset-0 career-hero-overlay" />
+        <div className="container relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+          <div className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 border border-brand-foreground/35 px-3 py-1.5 text-xs font-bold uppercase text-brand-foreground">
+              <Sparkles aria-hidden="true" className="size-4 text-secondary" />
+              Your career begins here
+            </span>
+            <h1 className="mt-6 text-balance text-4xl leading-[1.08] text-brand-foreground sm:text-6xl lg:text-7xl">
+              Zortex Solutions.<br /><span className="text-secondary">Your career, accelerated.</span>
+            </h1>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/90 sm:text-xl">
+              From your first line of code to real industry-client projects, HR interviews and placement assistance—build the proof and confidence to pursue your first job.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Button asChild size="xl" variant="secondary">
+                <Link to="/programs/$slug" params={{ slug: "externship" }}>Explore Externship <ArrowRight aria-hidden="true" /></Link>
+              </Button>
+              <Button asChild size="xl" variant="ghost" className="border border-brand-foreground/60 text-brand-foreground hover:bg-brand-foreground/15 hover:text-brand-foreground">
+                <a href={whatsappLink()} target="_blank" rel="noopener noreferrer"><MessageCircle aria-hidden="true" /> Talk to Our Team</a>
+              </Button>
             </div>
-
-            <div className="relative min-w-0">
-              <div
-                aria-hidden="true"
-                className="absolute -inset-6 rounded-full bg-primary/10 blur-3xl"
-              />
-              <img
-                src={heroImage}
-                alt="Illustration of coding, learning and career growth at Zortex Solutions"
-                width={1280}
-                height={1280}
-                className="relative mx-auto w-full max-w-lg drop-shadow-xl"
-              />
-              <div className="relative mx-auto -mt-8 grid max-w-lg grid-cols-3 border border-border bg-card shadow-lift">
-                {[["01", "Skills"], ["02", "Experience"], ["03", "Career proof"]].map(
-                  ([number, label]) => (
-                    <div key={number} className="min-w-0 border-r border-border px-2 py-3 text-center last:border-r-0 sm:px-4">
-                      <span className="block text-xs font-bold text-primary">{number}</span>
-                      <span className="mt-0.5 block text-xs font-semibold text-foreground sm:text-sm">{label}</span>
-                    </div>
-                  ),
-                )}
-              </div>
-            </div>
+            <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-brand-foreground">
+              {["Real projects", "Expert guidance", "HR training", "Placement assistance"].map((item) => (
+                <li key={item} className="flex items-center gap-2"><BadgeCheck aria-hidden="true" className="size-4 text-secondary" />{item}</li>
+              ))}
+            </ul>
           </div>
+        </div>
+      </section>
+
+      <section aria-label="Your path to a job" className="bg-secondary py-8 text-secondary-foreground sm:py-10">
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="flex items-center gap-3 text-sm font-bold uppercase"><RouteIcon aria-hidden="true" className="size-5" /> The Zortex career runway</div>
+          <ol className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[["01", "Learn the skills"], ["02", "Build with clients"], ["03", "Prepare with HR"], ["04", "Pursue the role"]].map(([number, label]) => (
+              <li key={number} className="flex items-center gap-3 border-t border-secondary-foreground/30 pt-3"><span className="font-display text-xl">{number}</span><span className="font-semibold">{label}</span></li>
+            ))}
+          </ol>
         </div>
       </section>
 
@@ -208,20 +190,20 @@ function HomePage() {
       <ClientLogos />
 
       {/* Why Zortex */}
-      <section className="section-y">
+      <section className="bg-background section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Why Zortex"
             title="Everything employers expect, built into one journey"
             description="Technical ability, proof of work, professional experience and interview preparation—developed together."
           />
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {whyZortex.map((item) => {
               const Icon = item.icon;
               return (
                 <article
                   key={item.title}
-                  className="card-hover rounded-2xl border border-border bg-card p-6 shadow-soft"
+                   className="card-hover rounded-md border border-border bg-card p-6 shadow-soft"
                 >
                   <span
                     aria-hidden="true"
@@ -241,7 +223,7 @@ function HomePage() {
       </section>
 
       {/* Journey */}
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-primary-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="The Zortex journey"
@@ -268,7 +250,7 @@ function HomePage() {
       </section>
 
       {/* Life at Zortex */}
-      <section className="section-y">
+       <section className="bg-background section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="grid gap-4 sm:grid-cols-2">
@@ -314,12 +296,12 @@ function HomePage() {
       </section>
 
       {/* Programs */}
-      <section className="section-y">
+       <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Programs"
-            title="Choose how you will become job ready"
-            description="Build your foundation in class or online, gain credible workplace experience through Zortex Externship, and prepare for HR rounds with experienced professionals."
+             title="Everything you need to move toward your first job"
+             description="Build your foundation in class or online, gain credible workplace experience through Zortex Externship, and prepare for HR rounds with experienced professionals. Placement assistance helps you take the next step."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {programs.map((program) => (
@@ -330,7 +312,7 @@ function HomePage() {
       </section>
 
       {/* HR Training */}
-      <section className="border-y border-border bg-surface section-y">
+       <section className="border-y border-border bg-secondary/40 section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <div>
@@ -389,7 +371,7 @@ function HomePage() {
       </section>
 
       {/* Courses */}
-      <section className="section-y">
+       <section className="bg-background section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Courses"
@@ -413,7 +395,7 @@ function HomePage() {
       </section>
 
       {/* Resources */}
-      <section className="section-y">
+       <section className="bg-primary-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Resources"

@@ -37,6 +37,7 @@ export const Route = createFileRoute("/courses/$slug")({
         { property: "og:description", content: loaderData.description },
         { property: "og:type", content: "article" },
         { property: "og:url", content: `/courses/${loaderData.slug}` },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: `/courses/${loaderData.slug}` }],
       scripts: [
@@ -147,7 +148,7 @@ function CourseDetailPage() {
       </section>
 
       {/* Outcomes */}
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-primary-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="What you will learn"
@@ -207,7 +208,7 @@ function CourseDetailPage() {
       </section>
 
       {/* Projects */}
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Projects"

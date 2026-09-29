@@ -24,6 +24,8 @@ export const Route = createFileRoute("/about")({
           "Our mission, vision and the team behind Zortex Solutions' practical, career-oriented technical training.",
       },
       { property: "og:url", content: "/about" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
@@ -36,11 +38,11 @@ function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="We turn academic knowledge into employable ability"
-        description={`${siteConfig.name} helps students and recent graduates build the skills, experience and confidence to compete for technical roles.`}
+        description={`${siteConfig.name} brings together technical training, industry-client projects, expert guidance, HR preparation and placement assistance to help students compete for technical roles.`}
         crumbs={[{ label: "About" }]}
       />
 
-      <section className="section-y">
+      <section className="bg-accent-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr]">
             <div className="min-w-0">
@@ -64,6 +66,10 @@ function AboutPage() {
                 <p>
                   Our mentors work alongside students rather than lecturing at them, reviewing code,
                   correcting habits early and pointing out how each concept shows up in real work.
+                </p>
+                <p>
+                  Experienced HR professionals help students prepare for interviews, while placement
+                  assistance helps them identify opportunities and navigate the application process.
                 </p>
               </div>
             </div>
@@ -139,7 +145,7 @@ function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="border-y border-border bg-surface section-y">
+      <section className="border-y border-border bg-primary-soft section-y">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeader
             eyebrow="Our team"

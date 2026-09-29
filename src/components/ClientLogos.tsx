@@ -1,14 +1,16 @@
 import venixoLogo from "@/assets/venixo-technologies.png.asset.json";
-import zodeckLogo from "@/assets/zodeck-solutions.jpg.asset.json";
+import zortexLogo from "@/assets/zortex-logo.asset.json";
+import techvatesLogo from "@/assets/techvates-logo.jpg.asset.json";
+import upwiseryLogo from "@/assets/upwisery-logo.jpg.asset.json";
 
 const clients = [
   {
     name: "Zodeck Solutions",
-    logo: zodeckLogo.url,
+    logo: zortexLogo.url,
     imageClassName: "size-20",
   },
   {
-    name: "DaysTech Solutions",
+    name: "DasyTech Solutions",
     logo: null,
     imageClassName: "",
   },
@@ -16,6 +18,16 @@ const clients = [
     name: "Venixo Technologies",
     logo: venixoLogo.url,
     imageClassName: "h-16 w-full max-w-52",
+  },
+  {
+    name: "Techvates Innovative Solutions",
+    logo: techvatesLogo.url,
+    imageClassName: "h-20 w-full max-w-52",
+  },
+  {
+    name: "Upwisery Broking",
+    logo: upwiseryLogo.url,
+    imageClassName: "h-20 w-full max-w-52",
   },
 ] as const;
 
@@ -28,7 +40,7 @@ export function ClientLogos() {
       {clients.map((client) => (
         <li
           key={`${client.name}-${duplicate ? "duplicate" : "original"}`}
-          className="flex min-h-36 w-64 shrink-0 flex-col items-center justify-center gap-4 border-r border-border bg-card px-6 py-5 sm:w-72"
+          className="flex min-h-40 w-64 shrink-0 flex-col items-center justify-center gap-4 border-r border-border bg-card px-6 py-5 sm:w-72"
         >
           {client.logo ? (
             <img
@@ -56,17 +68,17 @@ export function ClientLogos() {
   );
 
   return (
-    <section aria-labelledby="client-logos-title" className="border-b border-border bg-background py-12 sm:py-14">
+    <section aria-labelledby="client-logos-title" className="border-b border-border bg-accent-soft py-12 sm:py-14">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-14">
           <div className="shrink-0 text-center lg:w-52 lg:text-left">
-            <p className="text-xs font-bold uppercase tracking-wide text-primary">Trusted experience</p>
+            <p className="text-xs font-bold uppercase tracking-wide text-primary">Real-world connections</p>
             <h2 id="client-logos-title" className="mt-2 text-xl font-bold text-foreground">
               Organizations we&apos;ve worked with
             </h2>
           </div>
 
-          <div className="group flex-1 overflow-hidden rounded-lg border border-border bg-border">
+          <div className="group flex-1 overflow-hidden border border-border bg-border">
             <div className="animate-client-marquee flex w-max group-hover:[animation-play-state:paused]">
               {renderClients()}
               {renderClients(true)}
