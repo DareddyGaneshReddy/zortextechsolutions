@@ -8,5 +8,5 @@
 - [x] Update client logos and names: Zodeck uses Zortex logo, DasyTech spelling, add Techvates and Upwisery supplied logos.
 - [x] Verify pages, desktop/mobile visuals, and metadata.
 
-- [ ] Restyle all pages in the selected Midnight prestige direction, without changing factual claims or content.
-- [ ] Check the redesigned desktop and mobile pages.
+- [x] Restyle all pages in the selected Midnight prestige direction, without changing factual claims or content.
+- [x] Check the redesigned desktop and mobile pages.
