@@ -23,10 +23,10 @@ export function CtaBand({
         <div className="relative overflow-hidden px-6 py-10 text-center sm:px-12">
           <div aria-hidden="true" className="absolute inset-0 grid-backdrop opacity-15" />
           <div className="relative">
-            <h2 className="mx-auto max-w-2xl text-balance text-2xl font-bold text-primary-foreground sm:text-3xl">
+            <h2 className="mx-auto max-w-2xl text-balance text-2xl font-bold text-brand-foreground sm:text-3xl">
               {title}
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-primary-foreground/85 sm:text-base">
+            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-brand-foreground/85 sm:text-base">
               {description}
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -40,7 +40,7 @@ export function CtaBand({
                 asChild
                 size="lg"
                 variant="ghost"
-                className="w-full border border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground sm:w-auto"
+                className="w-full border border-brand-foreground/30 text-brand-foreground hover:bg-brand-foreground/10 hover:text-brand-foreground sm:w-auto"
               >
                 <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
                   <MessageCircle aria-hidden="true" />

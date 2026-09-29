@@ -352,7 +352,7 @@ function HomePage() {
                   >
                     <span
                       aria-hidden="true"
-                      className="grid size-11 shrink-0 place-items-center rounded-xl bg-accent-soft text-brand"
+                      className="grid size-11 shrink-0 place-items-center rounded-xl bg-accent-soft text-primary"
                     >
                       <Icon className="size-5" />
                     </span>
@@ -502,7 +502,7 @@ function ResourceLink({
     >
       <span
         aria-hidden="true"
-        className="grid size-11 place-items-center rounded-xl bg-accent-soft text-brand"
+        className="grid size-11 place-items-center rounded-xl bg-accent-soft text-primary"
       >
         <Icon className="size-5" />
       </span>

@@ -26,7 +26,7 @@ export function ProgramCard({ program }: { program: Program }) {
         <Icon className="size-6" />
       </span>
 
-      <span className={`mt-5 inline-flex w-fit items-center px-2.5 py-1 text-xs font-semibold uppercase ${isExternship ? "bg-brand-foreground/15 text-brand-foreground" : "bg-accent-soft text-brand"}`}>
+      <span className={`mt-5 inline-flex w-fit items-center px-2.5 py-1 text-xs font-semibold uppercase ${isExternship ? "bg-brand-foreground/15 text-brand-foreground" : "bg-accent-soft text-primary"}`}>
         {program.mode}
       </span>
 
